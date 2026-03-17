@@ -1,0 +1,1127 @@
+==========================================
+[2026-03-15 15:39:42] Starting: bun install
+==========================================
+[BUN] Installing dependencies...
+[0.33ms] ".env"
+bun install v1.3.10 (30e609e0)
+
++ @tailwindcss/postcss@4.1.18
++ @types/react@19.2.8
++ @types/react-dom@19.2.3
++ bun-types@1.3.6
++ eslint@9.39.2
++ eslint-config-next@16.1.3
++ tailwindcss@4.1.18
++ tw-animate-css@1.4.0
++ typescript@5.9.3
++ @dnd-kit/core@6.3.1
++ @dnd-kit/sortable@10.0.0
++ @dnd-kit/utilities@3.2.2
++ @hookform/resolvers@5.2.2
++ @mdxeditor/editor@3.52.3
++ @prisma/client@6.19.2
++ @radix-ui/react-accordion@1.2.12
++ @radix-ui/react-alert-dialog@1.1.15
++ @radix-ui/react-aspect-ratio@1.1.8
++ @radix-ui/react-avatar@1.1.11
++ @radix-ui/react-checkbox@1.3.3
++ @radix-ui/react-collapsible@1.1.12
++ @radix-ui/react-context-menu@2.2.16
++ @radix-ui/react-dialog@1.1.15
++ @radix-ui/react-dropdown-menu@2.1.16
++ @radix-ui/react-hover-card@1.1.15
++ @radix-ui/react-label@2.1.8
++ @radix-ui/react-menubar@1.1.16
++ @radix-ui/react-navigation-menu@1.2.14
++ @radix-ui/react-popover@1.1.15
++ @radix-ui/react-progress@1.1.8
++ @radix-ui/react-radio-group@1.3.8
++ @radix-ui/react-scroll-area@1.2.10
++ @radix-ui/react-select@2.2.6
++ @radix-ui/react-separator@1.1.8
++ @radix-ui/react-slider@1.3.6
++ @radix-ui/react-slot@1.2.4
++ @radix-ui/react-switch@1.2.6
++ @radix-ui/react-tabs@1.1.13
++ @radix-ui/react-toast@1.2.15
++ @radix-ui/react-toggle@1.1.10
++ @radix-ui/react-toggle-group@1.1.11
++ @radix-ui/react-tooltip@1.2.8
++ @reactuses/core@6.1.9
++ @tanstack/react-query@5.90.19
++ @tanstack/react-table@8.21.3
++ class-variance-authority@0.7.1
++ clsx@2.1.1
++ cmdk@1.1.1
++ date-fns@4.1.0
++ embla-carousel-react@8.6.0
++ framer-motion@12.26.2
++ input-otp@1.4.2
++ lucide-react@0.525.0
++ next@16.1.3
++ next-auth@4.24.13
++ next-intl@4.7.0
++ next-themes@0.4.6
++ prisma@6.19.2
++ react@19.2.3
++ react-day-picker@9.13.0
++ react-dom@19.2.3
++ react-hook-form@7.71.1
++ react-markdown@10.1.0
++ react-resizable-panels@3.0.6
++ react-syntax-highlighter@15.6.6
++ recharts@2.15.4
++ sharp@0.34.5
++ sonner@2.0.7
++ tailwind-merge@3.4.0
++ tailwindcss-animate@1.0.7
++ uuid@11.1.0
++ vaul@1.1.2
++ z-ai-web-dev-sdk@0.0.17
++ zod@4.3.5
++ zustand@5.0.10
+
+827 packages installed [11.52s]
+==========================================
+[2026-03-15 15:39:54] Completed: bun install
+[LOG] Step: bun install | Duration: 12s
+==========================================
+
+==========================================
+[2026-03-15 15:39:54] Starting: bun run db:push
+==========================================
+[BUN] Setting up database...
+$ prisma db push
+Environment variables loaded from .env
+Prisma schema loaded from prisma/schema.prisma
+Datasource "db": SQLite database "custom.db" at "file:/home/z/my-project/db/custom.db"
+
+SQLite database custom.db created at file:/home/z/my-project/db/custom.db
+
+🚀  Your database is now in sync with your Prisma schema. Done in 19ms
+
+Running generate... (Use --skip-generate to skip the generators)
+[2K[1A[2K[GRunning generate... - Prisma Client
+[2K[1A[2K[G✔ Generated Prisma Client (v6.19.2) to ./node_modules/@prisma/client in 65ms
+┌─────────────────────────────────────────────────────────┐
+│  Update available 6.19.2 -> 7.5.0                       │
+│                                                         │
+│  This is a major update - please follow the guide at    │
+│  https://pris.ly/d/major-version-upgrade                │
+│                                                         │
+│  Run the following to update                            │
+│    npm i --save-dev prisma@latest                       │
+│    npm i @prisma/client@latest                          │
+└─────────────────────────────────────────────────────────┘
+
+==========================================
+[2026-03-15 15:39:55] Completed: bun run db:push
+[LOG] Step: bun run db:push | Duration: 1s
+==========================================
+
+==========================================
+[2026-03-15 15:39:55] Starting: Starting Next.js dev server
+==========================================
+[BUN] Starting development server...
+==========================================
+$ next dev -p 3000 2>&1 | tee dev.log
+[2026-03-15 15:39:55] Completed: Starting Next.js dev server
+[LOG] Step: Starting Next.js dev server | Duration: 0s
+==========================================
+
+==========================================
+[2026-03-15 15:39:55] Starting: Waiting for Next.js dev server
+==========================================
+Waiting for Next.js dev server to be ready on localhost:3000...
+Attempt 1/60: Next.js dev server not ready yet, waiting...
+▲ Next.js 16.1.3 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://21.0.5.121:3000
+- Environments: .env
+
+✓ Starting...
+Attention: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://nextjs.org/telemetry
+
+
+  We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
+  The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+
+  	- include was updated to add '.next/dev/types/**/*.ts'
+
+  The following mandatory changes were made to your tsconfig.json:
+
+  	- jsx was set to react-jsx (next.js uses the React automatic runtime)
+
+✓ Ready in 934ms
+ GET / 200 in 2.9s (compile: 2.7s, render: 186ms)
+Next.js dev server is ready!
+==========================================
+[2026-03-15 15:39:59] Completed: Waiting for Next.js dev server
+[LOG] Step: Waiting for Next.js dev server | Duration: 4s
+==========================================
+
+==========================================
+ GET / 200 in 2.7s (compile: 2.7s, render: 46ms)
+[2026-03-15 15:39:59] Starting: Health check
+==========================================
+[BUN] Performing health check...
+ GET / 200 in 21ms (compile: 1638µs, render: 19ms)
+[BUN] Health check passed
+==========================================
+[2026-03-15 15:39:59] Completed: Health check
+[LOG] Step: Health check | Duration: 0s
+==========================================
+
+==========================================
+[2026-03-15 15:39:59] Starting: Starting mini-services
+==========================================
+Found mini-services directory, scanning for sub-services...
+Mini-services startup completed. Started 0 service(s).
+==========================================
+[2026-03-15 15:39:59] Completed: Starting mini-services
+[LOG] Step: Starting mini-services | Duration: 0s
+==========================================
+
+Next.js dev server is running in background (PID: 325).
+Use 'kill 325' to stop it.
+✓ Compiled in 917ms
+ GET / 200 in 84ms (compile: 45ms, render: 38ms)
+⚠ Fast Refresh had to perform a full reload when ./src/app/page.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ GET / 200 in 140ms (compile: 3ms, render: 137ms)
+ GET / 200 in 156ms (compile: 35ms, render: 121ms)
+ GET / 200 in 66ms (compile: 5ms, render: 62ms)
+ GET / 200 in 63ms (compile: 4ms, render: 59ms)
+ GET / 200 in 60ms (compile: 29ms, render: 32ms)
+ GET / 200 in 13ms (compile: 2ms, render: 10ms)
+ GET / 200 in 17ms (compile: 3ms, render: 14ms)
+ GET / 200 in 13ms (compile: 2ms, render: 11ms)
+ GET / 200 in 18ms (compile: 3ms, render: 15ms)
+ GET / 200 in 12ms (compile: 2ms, render: 9ms)
+ GET / 200 in 18ms (compile: 1910µs, render: 16ms)
+ GET / 200 in 12ms (compile: 2ms, render: 10ms)
+ GET / 200 in 14ms (compile: 1857µs, render: 12ms)
+ GET / 200 in 20ms (compile: 3ms, render: 17ms)
+ GET / 200 in 21ms (compile: 3ms, render: 18ms)
+ GET / 200 in 12ms (compile: 1902µs, render: 11ms)
+ GET / 200 in 14ms (compile: 1977µs, render: 12ms)
+ GET / 200 in 20ms (compile: 3ms, render: 16ms)
+ GET / 200 in 43ms (compile: 20ms, render: 23ms)
+ GET / 200 in 12ms (compile: 2ms, render: 10ms)
+ GET / 200 in 12ms (compile: 1805µs, render: 10ms)
+ GET / 200 in 11ms (compile: 1589µs, render: 9ms)
+ GET / 200 in 13ms (compile: 1788µs, render: 11ms)
+ GET / 200 in 12ms (compile: 1818µs, render: 10ms)
+ GET / 200 in 11ms (compile: 1689µs, render: 10ms)
+ GET / 200 in 12ms (compile: 1713µs, render: 10ms)
+ GET / 200 in 17ms (compile: 1744µs, render: 15ms)
+ GET / 200 in 13ms (compile: 2ms, render: 11ms)
+ GET / 200 in 12ms (compile: 2ms, render: 9ms)
+ GET / 200 in 12ms (compile: 1808µs, render: 10ms)
+ GET / 200 in 28ms (compile: 2ms, render: 26ms)
+ GET / 200 in 12ms (compile: 2ms, render: 10ms)
+ GET / 200 in 12ms (compile: 1989µs, render: 10ms)
+ GET / 200 in 13ms (compile: 1791µs, render: 11ms)
+ GET / 200 in 12ms (compile: 2ms, render: 9ms)
+ GET / 200 in 15ms (compile: 2ms, render: 12ms)
+ GET / 200 in 17ms (compile: 4ms, render: 13ms)
+ GET / 200 in 16ms (compile: 3ms, render: 13ms)
+ GET / 200 in 18ms (compile: 3ms, render: 15ms)
+ GET / 200 in 10ms (compile: 1728µs, render: 8ms)
+ GET / 200 in 11ms (compile: 2ms, render: 9ms)
+ GET / 200 in 11ms (compile: 2ms, render: 9ms)
+ GET / 200 in 14ms (compile: 1866µs, render: 13ms)
+ GET / 200 in 17ms (compile: 3ms, render: 14ms)
+ GET / 200 in 17ms (compile: 3ms, render: 14ms)
+ GET / 200 in 35ms (compile: 4ms, render: 31ms)
+ GET / 200 in 13ms (compile: 2ms, render: 10ms)
+ GET / 200 in 11ms (compile: 1886µs, render: 9ms)
+ GET / 200 in 11ms (compile: 1914µs, render: 9ms)
+ GET / 200 in 11ms (compile: 1816µs, render: 9ms)
+ GET / 200 in 10ms (compile: 1838µs, render: 9ms)
+ GET / 200 in 11ms (compile: 1807µs, render: 9ms)
+ GET / 200 in 11ms (compile: 1749µs, render: 9ms)
+ GET / 200 in 13ms (compile: 1577µs, render: 11ms)
+ GET / 200 in 11ms (compile: 1792µs, render: 10ms)
+ GET / 200 in 10ms (compile: 1695µs, render: 9ms)
+ GET / 200 in 11ms (compile: 1828µs, render: 9ms)
+ GET / 200 in 11ms (compile: 1791µs, render: 9ms)
+ GET / 200 in 15ms (compile: 2ms, render: 12ms)
+ GET / 200 in 13ms (compile: 2ms, render: 10ms)
+ GET / 200 in 20ms (compile: 2ms, render: 18ms)
+ GET / 200 in 12ms (compile: 2ms, render: 10ms)
+ GET / 200 in 13ms (compile: 1959µs, render: 11ms)
+ GET / 200 in 14ms (compile: 4ms, render: 10ms)
+✓ Compiled in 288ms
+ GET / 200 in 167ms (compile: 5ms, render: 162ms)
+ GET / 200 in 60ms (compile: 4ms, render: 56ms)
+✓ Compiled in 225ms
+⚠ Cross origin request detected from preview-chat-7aa0cc22-d725-42af-bbe5-0e91f8714b66.space.z.ai to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+ POST /api/chat 200 in 1349ms (compile: 233ms, render: 1117ms)
+ POST /api/chat 200 in 2.1s (compile: 3ms, render: 2.1s)
+ POST /api/chat 200 in 3.1s (compile: 3ms, render: 3.1s)
+ POST /api/chat 200 in 1615ms (compile: 1918µs, render: 1613ms)
+ GET / 200 in 84ms (compile: 48ms, render: 36ms)
+ GET / 200 in 14ms (compile: 3ms, render: 11ms)
+ GET / 200 in 17ms (compile: 3ms, render: 14ms)
+ GET / 200 in 12ms (compile: 2ms, render: 10ms)
+ GET / 200 in 13ms (compile: 3ms, render: 10ms)
+ POST /api/chat 200 in 54s (compile: 1760µs, render: 54s)
+ GET / 200 in 18ms (compile: 1922µs, render: 16ms)
+ GET / 200 in 12ms (compile: 1983µs, render: 10ms)
+ GET / 200 in 34ms (compile: 5ms, render: 29ms)
+ GET / 200 in 28ms (compile: 3ms, render: 25ms)
+ GET / 200 in 20ms (compile: 2ms, render: 18ms)
+ GET / 200 in 21ms (compile: 2ms, render: 19ms)
+ GET / 200 in 61ms (compile: 4ms, render: 58ms)
+ GET / 200 in 13ms (compile: 2ms, render: 11ms)
+ GET / 200 in 17ms (compile: 2ms, render: 15ms)
+ GET / 200 in 13ms (compile: 1978µs, render: 11ms)
+ GET / 200 in 25ms (compile: 3ms, render: 22ms)
+ GET / 200 in 15ms (compile: 2ms, render: 13ms)
+ GET / 200 in 12ms (compile: 3ms, render: 10ms)
+ GET / 200 in 16ms (compile: 1774µs, render: 14ms)
+ GET / 200 in 11ms (compile: 1737µs, render: 9ms)
+ GET / 200 in 11ms (compile: 1775µs, render: 10ms)
+ GET / 200 in 12ms (compile: 1780µs, render: 10ms)
+ GET / 200 in 16ms (compile: 2ms, render: 14ms)
+ GET / 200 in 18ms (compile: 3ms, render: 15ms)
+ GET / 200 in 22ms (compile: 3ms, render: 19ms)
+ GET / 200 in 12ms (compile: 1916µs, render: 10ms)
+ GET / 200 in 12ms (compile: 2ms, render: 10ms)
+ GET / 200 in 15ms (compile: 3ms, render: 12ms)
+ GET / 200 in 18ms (compile: 3ms, render: 15ms)
+ GET / 200 in 17ms (compile: 3ms, render: 14ms)
+ GET / 200 in 22ms (compile: 3ms, render: 19ms)
+ GET / 200 in 13ms (compile: 2ms, render: 11ms)
+ GET / 200 in 12ms (compile: 2ms, render: 10ms)
+ GET / 200 in 12ms (compile: 2ms, render: 10ms)
+ GET / 200 in 14ms (compile: 2ms, render: 11ms)
+ GET / 200 in 12ms (compile: 1897µs, render: 10ms)
+ GET / 200 in 22ms (compile: 1961µs, render: 20ms)
+ GET / 200 in 14ms (compile: 1897µs, render: 12ms)
+ GET / 200 in 11ms (compile: 1779µs, render: 10ms)
+ GET / 200 in 12ms (compile: 1883µs, render: 10ms)
+ GET / 200 in 12ms (compile: 1892µs, render: 10ms)
+ GET / 200 in 12ms (compile: 1779µs, render: 11ms)
+ GET / 200 in 17ms (compile: 1726µs, render: 15ms)
+ GET / 200 in 12ms (compile: 1838µs, render: 10ms)
+ GET / 200 in 12ms (compile: 1909µs, render: 10ms)
+ GET / 200 in 12ms (compile: 1845µs, render: 10ms)
+ GET / 200 in 13ms (compile: 1672µs, render: 11ms)
+ GET / 200 in 12ms (compile: 1854µs, render: 10ms)
+ GET / 200 in 36ms (compile: 1975µs, render: 34ms)
+ GET / 200 in 12ms (compile: 1710µs, render: 10ms)
+ GET / 200 in 12ms (compile: 1532µs, render: 10ms)
+ GET / 200 in 10ms (compile: 1595µs, render: 9ms)
+ GET / 200 in 12ms (compile: 2ms, render: 9ms)
+ GET / 200 in 12ms (compile: 2ms, render: 10ms)
+ GET / 200 in 11ms (compile: 1889µs, render: 9ms)
+ GET / 200 in 12ms (compile: 1949µs, render: 10ms)
+ GET / 200 in 18ms (compile: 4ms, render: 14ms)
+ GET / 200 in 16ms (compile: 3ms, render: 14ms)
+ GET / 200 in 16ms (compile: 3ms, render: 14ms)
+ GET / 200 in 17ms (compile: 3ms, render: 14ms)
+ GET / 200 in 18ms (compile: 4ms, render: 13ms)
+ GET / 200 in 21ms (compile: 3ms, render: 18ms)
+ GET / 200 in 11ms (compile: 3ms, render: 9ms)
+ GET / 200 in 12ms (compile: 1709µs, render: 10ms)
+ GET / 200 in 11ms (compile: 2ms, render: 9ms)
+ GET / 200 in 11ms (compile: 1576µs, render: 9ms)
+ GET / 200 in 13ms (compile: 2ms, render: 11ms)
+ GET / 200 in 16ms (compile: 3ms, render: 14ms)
+ GET / 200 in 16ms (compile: 3ms, render: 13ms)
+ GET / 200 in 17ms (compile: 3ms, render: 14ms)
+ GET / 200 in 18ms (compile: 3ms, render: 15ms)
+ GET / 200 in 20ms (compile: 3ms, render: 17ms)
+ GET / 200 in 25ms (compile: 3ms, render: 22ms)
+ GET / 200 in 12ms (compile: 2ms, render: 10ms)
+ GET / 200 in 13ms (compile: 4ms, render: 10ms)
+ GET / 200 in 12ms (compile: 1960µs, render: 10ms)
+ GET / 200 in 12ms (compile: 2000µs, render: 10ms)
+ GET / 200 in 13ms (compile: 3ms, render: 11ms)
+ GET / 200 in 175ms (compile: 4ms, render: 172ms)
+⨯ ReferenceError: baseRadius is not defined
+    at AIAvatar (src/app/page.tsx:177:42)
+  175 |     draw();
+  176 |     return () => cancelAnimationFrame(animationFrame);
+> 177 |   }, [emotion, isProcessing, dimensions, baseRadius, centerX, centerY]);
+      |                                          ^
+  178 |
+  179 |   return (
+  180 |     <canvas  {
+  digest: '294002779'
+}
+ GET / 500 in 224ms (compile: 43ms, render: 181ms)
+✓ Compiled in 129ms
+ GET / 200 in 232ms (compile: 67ms, render: 165ms)
+ POST /api/chat 200 in 2.2s (compile: 38ms, render: 2.2s)
+ POST /api/speak 200 in 7.9s (compile: 108ms, render: 7.8s)
+==========================================
+[2026-03-16 05:11:21] Starting: bun install
+==========================================
+[BUN] Installing dependencies...
+[0.09ms] ".env"
+bun install v1.3.10 (30e609e0)
+
+505 packages installed [3.39s]
+==========================================
+[2026-03-16 05:11:24] Completed: bun install
+[LOG] Step: bun install | Duration: 3s
+==========================================
+
+==========================================
+[2026-03-16 05:11:24] Starting: bun run db:push
+==========================================
+[BUN] Setting up database...
+$ prisma db push
+Environment variables loaded from .env
+Prisma schema loaded from prisma/schema.prisma
+Datasource "db": SQLite database "custom.db" at "file:/home/z/my-project/db/custom.db"
+
+The database is already in sync with the Prisma schema.
+
+Running generate... (Use --skip-generate to skip the generators)
+[2K[1A[2K[GRunning generate... - Prisma Client
+[2K[1A[2K[G✔ Generated Prisma Client (v6.19.2) to ./node_modules/@prisma/client in 137ms
+
+==========================================
+[2026-03-16 05:11:26] Completed: bun run db:push
+[LOG] Step: bun run db:push | Duration: 2s
+==========================================
+
+==========================================
+[2026-03-16 05:11:26] Starting: Starting Next.js dev server
+==========================================
+[BUN] Starting development server...
+==========================================
+$ next dev -p 3000 2>&1 | tee dev.log
+[2026-03-16 05:11:26] Completed: Starting Next.js dev server
+[LOG] Step: Starting Next.js dev server | Duration: 0s
+==========================================
+
+==========================================
+[2026-03-16 05:11:26] Starting: Waiting for Next.js dev server
+==========================================
+Waiting for Next.js dev server to be ready on localhost:3000...
+Attempt 1/60: Next.js dev server not ready yet, waiting...
+▲ Next.js 16.1.3 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://21.0.15.22:3000
+- Environments: .env
+
+✓ Starting...
+Attention: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://nextjs.org/telemetry
+
+✓ Ready in 1002ms
+○ Compiling / ...
+ GET / 200 in 4.0s (compile: 3.8s, render: 218ms)
+Next.js dev server is ready!
+ GET / 200 in 4.0s (compile: 3.7s, render: 290ms)
+==========================================
+[2026-03-16 05:11:31] Completed: Waiting for Next.js dev server
+[LOG] Step: Waiting for Next.js dev server | Duration: 5s
+==========================================
+
+==========================================
+[2026-03-16 05:11:31] Starting: Health check
+==========================================
+[BUN] Performing health check...
+ GET / 200 in 44ms (compile: 3ms, render: 41ms)
+[BUN] Health check passed
+==========================================
+[2026-03-16 05:11:32] Completed: Health check
+[LOG] Step: Health check | Duration: 1s
+==========================================
+
+==========================================
+[2026-03-16 05:11:32] Starting: Starting mini-services
+==========================================
+Found mini-services directory, scanning for sub-services...
+Mini-services startup completed. Started 0 service(s).
+==========================================
+[2026-03-16 05:11:32] Completed: Starting mini-services
+[LOG] Step: Starting mini-services | Duration: 0s
+==========================================
+
+Next.js dev server is running in background (PID: 274).
+Use 'kill 274' to stop it.
+ GET / 200 in 62ms (compile: 4ms, render: 58ms)
+ GET / 200 in 58ms (compile: 3ms, render: 55ms)
+ POST /api/chat 200 in 826ms (compile: 234ms, render: 591ms)
+ POST /api/speak 200 in 3.9s (compile: 113ms, render: 3.8s)
+ POST /api/chat 200 in 524ms (compile: 3ms, render: 521ms)
+ POST /api/chat 200 in 864ms (compile: 4ms, render: 860ms)
+ GET / 200 in 57ms (compile: 3ms, render: 54ms)
+ GET / 200 in 56ms (compile: 4ms, render: 52ms)
+ GET / 200 in 79ms (compile: 45ms, render: 34ms)
+ GET / 200 in 14ms (compile: 2ms, render: 12ms)
+ GET / 200 in 21ms (compile: 5ms, render: 15ms)
+ GET / 200 in 20ms (compile: 4ms, render: 16ms)
+ GET / 200 in 14ms (compile: 2ms, render: 12ms)
+ GET / 200 in 21ms (compile: 4ms, render: 17ms)
+ GET / 200 in 15ms (compile: 2ms, render: 12ms)
+ GET / 200 in 17ms (compile: 2ms, render: 15ms)
+ GET / 200 in 16ms (compile: 3ms, render: 13ms)
+ GET / 200 in 17ms (compile: 2ms, render: 15ms)
+ GET / 200 in 12ms (compile: 2ms, render: 10ms)
+ GET / 200 in 12ms (compile: 2ms, render: 10ms)
+ GET / 200 in 13ms (compile: 2ms, render: 11ms)
+ GET / 200 in 18ms (compile: 3ms, render: 14ms)
+ GET / 200 in 20ms (compile: 3ms, render: 17ms)
+ GET / 200 in 14ms (compile: 2ms, render: 11ms)
+ GET / 200 in 15ms (compile: 2ms, render: 12ms)
+ GET / 200 in 19ms (compile: 3ms, render: 15ms)
+ GET / 200 in 22ms (compile: 4ms, render: 19ms)
+ GET / 200 in 15ms (compile: 2ms, render: 12ms)
+ GET / 200 in 13ms (compile: 2ms, render: 11ms)
+ GET / 200 in 17ms (compile: 2ms, render: 15ms)
+ GET / 200 in 19ms (compile: 2ms, render: 16ms)
+ GET / 200 in 24ms (compile: 2ms, render: 22ms)
+ GET / 200 in 13ms (compile: 2ms, render: 11ms)
+ GET / 200 in 12ms (compile: 2ms, render: 10ms)
+ GET / 200 in 12ms (compile: 1924µs, render: 10ms)
+ GET / 200 in 12ms (compile: 2ms, render: 10ms)
+ GET / 200 in 13ms (compile: 2ms, render: 11ms)
+ GET / 200 in 12ms (compile: 2ms, render: 10ms)
+ GET / 200 in 25ms (compile: 7ms, render: 18ms)
+ GET / 200 in 18ms (compile: 3ms, render: 15ms)
+ GET / 200 in 18ms (compile: 3ms, render: 16ms)
+ GET / 200 in 17ms (compile: 3ms, render: 14ms)
+ GET / 200 in 15ms (compile: 2ms, render: 13ms)
+ GET / 200 in 20ms (compile: 3ms, render: 17ms)
+ GET / 200 in 15ms (compile: 2ms, render: 12ms)
+ GET / 200 in 20ms (compile: 3ms, render: 16ms)
+ GET / 200 in 31ms (compile: 3ms, render: 28ms)
+ GET / 200 in 16ms (compile: 3ms, render: 13ms)
+ GET / 200 in 15ms (compile: 3ms, render: 13ms)
+ GET / 200 in 12ms (compile: 2ms, render: 10ms)
+ GET / 200 in 17ms (compile: 2ms, render: 15ms)
+ GET / 200 in 13ms (compile: 2ms, render: 11ms)
+ GET / 200 in 18ms (compile: 3ms, render: 15ms)
+ GET / 200 in 20ms (compile: 3ms, render: 17ms)
+ GET / 200 in 13ms (compile: 2ms, render: 11ms)
+ GET / 200 in 17ms (compile: 2ms, render: 14ms)
+ GET / 200 in 21ms (compile: 3ms, render: 17ms)
+ GET / 200 in 13ms (compile: 3ms, render: 11ms)
+ GET / 200 in 14ms (compile: 3ms, render: 11ms)
+ GET / 200 in 20ms (compile: 2ms, render: 18ms)
+ GET / 200 in 13ms (compile: 2ms, render: 11ms)
+ GET / 200 in 18ms (compile: 3ms, render: 15ms)
+ GET / 200 in 20ms (compile: 3ms, render: 16ms)
+ GET / 200 in 15ms (compile: 2ms, render: 13ms)
+ GET / 200 in 12ms (compile: 2ms, render: 9ms)
+ GET / 200 in 12ms (compile: 2ms, render: 10ms)
+ GET / 200 in 19ms (compile: 3ms, render: 16ms)
+ GET / 200 in 13ms (compile: 2ms, render: 11ms)
+ GET / 200 in 12ms (compile: 2ms, render: 10ms)
+ GET / 200 in 13ms (compile: 3ms, render: 11ms)
+ GET / 200 in 16ms (compile: 2ms, render: 14ms)
+ GET / 200 in 18ms (compile: 4ms, render: 14ms)
+ GET / 200 in 22ms (compile: 3ms, render: 19ms)
+ GET / 200 in 13ms (compile: 2ms, render: 11ms)
+ GET / 200 in 13ms (compile: 2ms, render: 11ms)
+ GET / 200 in 15ms (compile: 2ms, render: 13ms)
+ GET / 200 in 19ms (compile: 3ms, render: 16ms)
+ GET / 200 in 19ms (compile: 3ms, render: 16ms)
+ GET / 200 in 23ms (compile: 3ms, render: 20ms)
+ GET / 200 in 14ms (compile: 2ms, render: 11ms)
+ GET / 200 in 13ms (compile: 2ms, render: 11ms)
+ GET / 200 in 14ms (compile: 2ms, render: 12ms)
+ GET / 200 in 13ms (compile: 2ms, render: 11ms)
+ GET / 200 in 13ms (compile: 2ms, render: 11ms)
+ GET / 200 in 21ms (compile: 3ms, render: 19ms)
+ GET / 200 in 14ms (compile: 2ms, render: 12ms)
+ GET / 200 in 15ms (compile: 4ms, render: 11ms)
+ GET / 200 in 13ms (compile: 2ms, render: 11ms)
+ GET / 200 in 17ms (compile: 3ms, render: 14ms)
+ GET / 200 in 15ms (compile: 2ms, render: 13ms)
+ GET / 200 in 20ms (compile: 3ms, render: 17ms)
+ GET / 200 in 14ms (compile: 3ms, render: 12ms)
+ GET / 200 in 13ms (compile: 3ms, render: 11ms)
+ GET / 200 in 14ms (compile: 3ms, render: 12ms)
+ GET / 200 in 17ms (compile: 3ms, render: 14ms)
+ GET / 200 in 16ms (compile: 4ms, render: 12ms)
+ GET / 200 in 25ms (compile: 3ms, render: 22ms)
+ GET / 200 in 15ms (compile: 3ms, render: 12ms)
+ GET / 200 in 14ms (compile: 3ms, render: 12ms)
+ GET / 200 in 16ms (compile: 3ms, render: 13ms)
+ GET / 200 in 15ms (compile: 3ms, render: 12ms)
+ GET / 200 in 14ms (compile: 2ms, render: 12ms)
+ GET / 200 in 16ms (compile: 4ms, render: 12ms)
+ GET / 200 in 21ms (compile: 4ms, render: 17ms)
+ GET / 200 in 20ms (compile: 4ms, render: 17ms)
+ GET / 200 in 20ms (compile: 4ms, render: 17ms)
+ GET / 200 in 20ms (compile: 4ms, render: 17ms)
+ GET / 200 in 20ms (compile: 4ms, render: 16ms)
+ GET / 200 in 25ms (compile: 4ms, render: 21ms)
+ GET / 200 in 16ms (compile: 3ms, render: 13ms)
+ POST /api/chat 200 in 611ms (compile: 33ms, render: 578ms)
+✓ Compiled in 240ms
+prisma:query SELECT COUNT(*) AS `_count$_all` FROM (SELECT `main`.`TrainingData`.`id` FROM `main`.`TrainingData` WHERE 1=1 LIMIT ? OFFSET ?) AS `sub`
+prisma:query SELECT COUNT(*) AS `_count$_all` FROM (SELECT `main`.`TrainingData`.`id` FROM `main`.`TrainingData` WHERE `main`.`TrainingData`.`used` = ? LIMIT ? OFFSET ?) AS `sub`
+prisma:query SELECT COUNT(*) AS `_count$_all` FROM (SELECT `main`.`Knowledge`.`id` FROM `main`.`Knowledge` WHERE 1=1 LIMIT ? OFFSET ?) AS `sub`
+prisma:query SELECT COUNT(*) AS `_count$_all` FROM (SELECT `main`.`Feedback`.`id` FROM `main`.`Feedback` WHERE `main`.`Feedback`.`isPositive` = ? LIMIT ? OFFSET ?) AS `sub`
+prisma:query SELECT `main`.`TrainingData`.`id`, `main`.`TrainingData`.`input`, `main`.`TrainingData`.`output`, `main`.`TrainingData`.`context`, `main`.`TrainingData`.`source`, `main`.`TrainingData`.`category`, `main`.`TrainingData`.`quality`, `main`.`TrainingData`.`used`, `main`.`TrainingData`.`userId`, `main`.`TrainingData`.`createdAt` FROM `main`.`TrainingData` WHERE 1=1 ORDER BY `main`.`TrainingData`.`createdAt` DESC LIMIT ? OFFSET ?
+prisma:query SELECT COUNT(`main`.`Knowledge`.`id`) AS `_count$id`, `main`.`Knowledge`.`category` FROM `main`.`Knowledge` WHERE 1=1 GROUP BY `main`.`Knowledge`.`category` LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`TrainingSession`.`id`, `main`.`TrainingSession`.`name`, `main`.`TrainingSession`.`status`, `main`.`TrainingSession`.`progress`, `main`.`TrainingSession`.`samplesUsed`, `main`.`TrainingSession`.`accuracy`, `main`.`TrainingSession`.`startedAt`, `main`.`TrainingSession`.`completedAt`, `main`.`TrainingSession`.`createdAt`, `main`.`TrainingSession`.`updatedAt` FROM `main`.`TrainingSession` WHERE 1=1 ORDER BY `main`.`TrainingSession`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/train 200 in 163ms (compile: 134ms, render: 29ms)
+prisma:query SELECT COUNT(*) AS `_count$_all` FROM (SELECT `main`.`TrainingData`.`id` FROM `main`.`TrainingData` WHERE 1=1 LIMIT ? OFFSET ?) AS `sub`
+prisma:query SELECT COUNT(*) AS `_count$_all` FROM (SELECT `main`.`TrainingData`.`id` FROM `main`.`TrainingData` WHERE `main`.`TrainingData`.`used` = ? LIMIT ? OFFSET ?) AS `sub`
+prisma:query SELECT COUNT(*) AS `_count$_all` FROM (SELECT `main`.`Knowledge`.`id` FROM `main`.`Knowledge` WHERE 1=1 LIMIT ? OFFSET ?) AS `sub`
+prisma:query SELECT COUNT(*) AS `_count$_all` FROM (SELECT `main`.`Feedback`.`id` FROM `main`.`Feedback` WHERE `main`.`Feedback`.`isPositive` = ? LIMIT ? OFFSET ?) AS `sub`
+prisma:query SELECT `main`.`TrainingData`.`id`, `main`.`TrainingData`.`input`, `main`.`TrainingData`.`output`, `main`.`TrainingData`.`context`, `main`.`TrainingData`.`source`, `main`.`TrainingData`.`category`, `main`.`TrainingData`.`quality`, `main`.`TrainingData`.`used`, `main`.`TrainingData`.`userId`, `main`.`TrainingData`.`createdAt` FROM `main`.`TrainingData` WHERE 1=1 ORDER BY `main`.`TrainingData`.`createdAt` DESC LIMIT ? OFFSET ?
+prisma:query SELECT COUNT(`main`.`Knowledge`.`id`) AS `_count$id`, `main`.`Knowledge`.`category` FROM `main`.`Knowledge` WHERE 1=1 GROUP BY `main`.`Knowledge`.`category` LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`TrainingSession`.`id`, `main`.`TrainingSession`.`name`, `main`.`TrainingSession`.`status`, `main`.`TrainingSession`.`progress`, `main`.`TrainingSession`.`samplesUsed`, `main`.`TrainingSession`.`accuracy`, `main`.`TrainingSession`.`startedAt`, `main`.`TrainingSession`.`completedAt`, `main`.`TrainingSession`.`createdAt`, `main`.`TrainingSession`.`updatedAt` FROM `main`.`TrainingSession` WHERE 1=1 ORDER BY `main`.`TrainingSession`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/train 200 in 19ms (compile: 3ms, render: 16ms)
+✓ Compiled in 119ms
+prisma:query SELECT 1
+prisma:query SELECT COUNT(*) AS `_count$_all` FROM (SELECT `main`.`TrainingData`.`id` FROM `main`.`TrainingData` WHERE 1=1 LIMIT ? OFFSET ?) AS `sub`
+prisma:query SELECT COUNT(*) AS `_count$_all` FROM (SELECT `main`.`TrainingData`.`id` FROM `main`.`TrainingData` WHERE `main`.`TrainingData`.`used` = ? LIMIT ? OFFSET ?) AS `sub`
+prisma:query SELECT COUNT(*) AS `_count$_all` FROM (SELECT `main`.`Knowledge`.`id` FROM `main`.`Knowledge` WHERE 1=1 LIMIT ? OFFSET ?) AS `sub`
+prisma:query SELECT COUNT(*) AS `_count$_all` FROM (SELECT `main`.`Feedback`.`id` FROM `main`.`Feedback` WHERE `main`.`Feedback`.`isPositive` = ? LIMIT ? OFFSET ?) AS `sub`
+prisma:query SELECT `main`.`TrainingData`.`id`, `main`.`TrainingData`.`input`, `main`.`TrainingData`.`output`, `main`.`TrainingData`.`context`, `main`.`TrainingData`.`source`, `main`.`TrainingData`.`category`, `main`.`TrainingData`.`quality`, `main`.`TrainingData`.`used`, `main`.`TrainingData`.`userId`, `main`.`TrainingData`.`createdAt` FROM `main`.`TrainingData` WHERE 1=1 ORDER BY `main`.`TrainingData`.`createdAt` DESC LIMIT ? OFFSET ?
+prisma:query SELECT COUNT(`main`.`Knowledge`.`id`) AS `_count$id`, `main`.`Knowledge`.`category` FROM `main`.`Knowledge` WHERE 1=1 GROUP BY `main`.`Knowledge`.`category` LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`TrainingSession`.`id`, `main`.`TrainingSession`.`name`, `main`.`TrainingSession`.`status`, `main`.`TrainingSession`.`progress`, `main`.`TrainingSession`.`samplesUsed`, `main`.`TrainingSession`.`accuracy`, `main`.`TrainingSession`.`startedAt`, `main`.`TrainingSession`.`completedAt`, `main`.`TrainingSession`.`createdAt`, `main`.`TrainingSession`.`updatedAt` FROM `main`.`TrainingSession` WHERE 1=1 ORDER BY `main`.`TrainingSession`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/train 200 in 10ms (compile: 1583µs, render: 8ms)
+prisma:query SELECT COUNT(*) AS `_count$_all` FROM (SELECT `main`.`TrainingData`.`id` FROM `main`.`TrainingData` WHERE 1=1 LIMIT ? OFFSET ?) AS `sub`
+prisma:query SELECT COUNT(*) AS `_count$_all` FROM (SELECT `main`.`TrainingData`.`id` FROM `main`.`TrainingData` WHERE `main`.`TrainingData`.`used` = ? LIMIT ? OFFSET ?) AS `sub`
+prisma:query SELECT COUNT(*) AS `_count$_all` FROM (SELECT `main`.`Knowledge`.`id` FROM `main`.`Knowledge` WHERE 1=1 LIMIT ? OFFSET ?) AS `sub`
+prisma:query SELECT COUNT(*) AS `_count$_all` FROM (SELECT `main`.`Feedback`.`id` FROM `main`.`Feedback` WHERE `main`.`Feedback`.`isPositive` = ? LIMIT ? OFFSET ?) AS `sub`
+prisma:query SELECT `main`.`TrainingData`.`id`, `main`.`TrainingData`.`input`, `main`.`TrainingData`.`output`, `main`.`TrainingData`.`context`, `main`.`TrainingData`.`source`, `main`.`TrainingData`.`category`, `main`.`TrainingData`.`quality`, `main`.`TrainingData`.`used`, `main`.`TrainingData`.`userId`, `main`.`TrainingData`.`createdAt` FROM `main`.`TrainingData` WHERE 1=1 ORDER BY `main`.`TrainingData`.`createdAt` DESC LIMIT ? OFFSET ?
+prisma:query SELECT COUNT(`main`.`Knowledge`.`id`) AS `_count$id`, `main`.`Knowledge`.`category` FROM `main`.`Knowledge` WHERE 1=1 GROUP BY `main`.`Knowledge`.`category` LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`TrainingSession`.`id`, `main`.`TrainingSession`.`name`, `main`.`TrainingSession`.`status`, `main`.`TrainingSession`.`progress`, `main`.`TrainingSession`.`samplesUsed`, `main`.`TrainingSession`.`accuracy`, `main`.`TrainingSession`.`startedAt`, `main`.`TrainingSession`.`completedAt`, `main`.`TrainingSession`.`createdAt`, `main`.`TrainingSession`.`updatedAt` FROM `main`.`TrainingSession` WHERE 1=1 ORDER BY `main`.`TrainingSession`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/train 200 in 10ms (compile: 1622µs, render: 9ms)
+ GET / 200 in 244ms (compile: 53ms, render: 192ms)
+prisma:query SELECT 1
+prisma:query SELECT COUNT(*) AS `_count$_all` FROM (SELECT `main`.`TrainingData`.`id` FROM `main`.`TrainingData` WHERE 1=1 LIMIT ? OFFSET ?) AS `sub`
+prisma:query SELECT COUNT(*) AS `_count$_all` FROM (SELECT `main`.`TrainingData`.`id` FROM `main`.`TrainingData` WHERE `main`.`TrainingData`.`used` = ? LIMIT ? OFFSET ?) AS `sub`
+prisma:query SELECT COUNT(*) AS `_count$_all` FROM (SELECT `main`.`Knowledge`.`id` FROM `main`.`Knowledge` WHERE 1=1 LIMIT ? OFFSET ?) AS `sub`
+prisma:query SELECT COUNT(*) AS `_count$_all` FROM (SELECT `main`.`Feedback`.`id` FROM `main`.`Feedback` WHERE `main`.`Feedback`.`isPositive` = ? LIMIT ? OFFSET ?) AS `sub`
+prisma:query SELECT `main`.`TrainingData`.`id`, `main`.`TrainingData`.`input`, `main`.`TrainingData`.`output`, `main`.`TrainingData`.`context`, `main`.`TrainingData`.`source`, `main`.`TrainingData`.`category`, `main`.`TrainingData`.`quality`, `main`.`TrainingData`.`used`, `main`.`TrainingData`.`userId`, `main`.`TrainingData`.`createdAt` FROM `main`.`TrainingData` WHERE 1=1 ORDER BY `main`.`TrainingData`.`createdAt` DESC LIMIT ? OFFSET ?
+prisma:query SELECT COUNT(`main`.`Knowledge`.`id`) AS `_count$id`, `main`.`Knowledge`.`category` FROM `main`.`Knowledge` WHERE 1=1 GROUP BY `main`.`Knowledge`.`category` LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`TrainingSession`.`id`, `main`.`TrainingSession`.`name`, `main`.`TrainingSession`.`status`, `main`.`TrainingSession`.`progress`, `main`.`TrainingSession`.`samplesUsed`, `main`.`TrainingSession`.`accuracy`, `main`.`TrainingSession`.`startedAt`, `main`.`TrainingSession`.`completedAt`, `main`.`TrainingSession`.`createdAt`, `main`.`TrainingSession`.`updatedAt` FROM `main`.`TrainingSession` WHERE 1=1 ORDER BY `main`.`TrainingSession`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/train 200 in 16ms (compile: 2ms, render: 14ms)
+ POST /api/chat 200 in 1896ms (compile: 53ms, render: 1843ms)
+ POST /api/chat 200 in 12.5s (compile: 3ms, render: 12.5s)
+==========================================
+[2026-03-17 15:07:27] Starting: bun install
+==========================================
+[BUN] Installing dependencies...
+[0.15ms] ".env"
+bun install v1.3.10 (30e609e0)
+
+458 packages installed [2.75s]
+==========================================
+[2026-03-17 15:07:29] Completed: bun install
+[LOG] Step: bun install | Duration: 2s
+==========================================
+
+==========================================
+[2026-03-17 15:07:29] Starting: bun run db:push
+==========================================
+[BUN] Setting up database...
+$ prisma db push
+Environment variables loaded from .env
+Prisma schema loaded from prisma/schema.prisma
+Datasource "db": SQLite database "custom.db" at "file:/home/z/my-project/db/custom.db"
+
+The database is already in sync with the Prisma schema.
+
+Running generate... (Use --skip-generate to skip the generators)
+[2K[1A[2K[GRunning generate... - Prisma Client
+[2K[1A[2K[G✔ Generated Prisma Client (v6.19.2) to ./node_modules/@prisma/client in 168ms
+
+==========================================
+[2026-03-17 15:07:31] Completed: bun run db:push
+[LOG] Step: bun run db:push | Duration: 2s
+==========================================
+
+==========================================
+[2026-03-17 15:07:31] Starting: Starting Next.js dev server
+==========================================
+[BUN] Starting development server...
+==========================================
+$ next dev -p 3000 2>&1 | tee dev.log
+[2026-03-17 15:07:31] Completed: Starting Next.js dev server
+[LOG] Step: Starting Next.js dev server | Duration: 0s
+==========================================
+
+==========================================
+[2026-03-17 15:07:31] Starting: Waiting for Next.js dev server
+==========================================
+Waiting for Next.js dev server to be ready on localhost:3000...
+Attempt 1/60: Next.js dev server not ready yet, waiting...
+▲ Next.js 16.1.3 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://21.0.11.77:3000
+- Environments: .env
+
+✓ Starting...
+Attention: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://nextjs.org/telemetry
+
+✓ Ready in 1084ms
+○ Compiling / ...
+ GET / 200 in 4.2s (compile: 4.0s, render: 255ms)
+Next.js dev server is ready!
+==========================================
+ GET / 200 in 3.6s (compile: 3.3s, render: 315ms)
+[2026-03-17 15:07:37] Completed: Waiting for Next.js dev server
+[LOG] Step: Waiting for Next.js dev server | Duration: 6s
+==========================================
+
+==========================================
+[2026-03-17 15:07:37] Starting: Health check
+==========================================
+[BUN] Performing health check...
+ GET / 200 in 56ms (compile: 3ms, render: 53ms)
+[BUN] Health check passed
+==========================================
+[2026-03-17 15:07:37] Completed: Health check
+[LOG] Step: Health check | Duration: 0s
+==========================================
+
+==========================================
+[2026-03-17 15:07:37] Starting: Starting mini-services
+==========================================
+Found mini-services directory, scanning for sub-services...
+Mini-services startup completed. Started 0 service(s).
+==========================================
+[2026-03-17 15:07:37] Completed: Starting mini-services
+[LOG] Step: Starting mini-services | Duration: 0s
+==========================================
+
+Next.js dev server is running in background (PID: 276).
+Use 'kill 276' to stop it.
+prisma:query SELECT COUNT(*) AS `_count$_all` FROM (SELECT `main`.`TrainingData`.`id` FROM `main`.`TrainingData` WHERE 1=1 LIMIT ? OFFSET ?) AS `sub`
+prisma:query SELECT COUNT(*) AS `_count$_all` FROM (SELECT `main`.`TrainingData`.`id` FROM `main`.`TrainingData` WHERE `main`.`TrainingData`.`used` = ? LIMIT ? OFFSET ?) AS `sub`
+prisma:query SELECT COUNT(*) AS `_count$_all` FROM (SELECT `main`.`Knowledge`.`id` FROM `main`.`Knowledge` WHERE 1=1 LIMIT ? OFFSET ?) AS `sub`
+prisma:query SELECT COUNT(*) AS `_count$_all` FROM (SELECT `main`.`Feedback`.`id` FROM `main`.`Feedback` WHERE `main`.`Feedback`.`isPositive` = ? LIMIT ? OFFSET ?) AS `sub`
+prisma:query SELECT `main`.`TrainingData`.`id`, `main`.`TrainingData`.`input`, `main`.`TrainingData`.`output`, `main`.`TrainingData`.`context`, `main`.`TrainingData`.`source`, `main`.`TrainingData`.`category`, `main`.`TrainingData`.`quality`, `main`.`TrainingData`.`used`, `main`.`TrainingData`.`userId`, `main`.`TrainingData`.`createdAt` FROM `main`.`TrainingData` WHERE 1=1 ORDER BY `main`.`TrainingData`.`createdAt` DESC LIMIT ? OFFSET ?
+prisma:query SELECT COUNT(`main`.`Knowledge`.`id`) AS `_count$id`, `main`.`Knowledge`.`category` FROM `main`.`Knowledge` WHERE 1=1 GROUP BY `main`.`Knowledge`.`category` LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`TrainingSession`.`id`, `main`.`TrainingSession`.`name`, `main`.`TrainingSession`.`status`, `main`.`TrainingSession`.`progress`, `main`.`TrainingSession`.`samplesUsed`, `main`.`TrainingSession`.`accuracy`, `main`.`TrainingSession`.`startedAt`, `main`.`TrainingSession`.`completedAt`, `main`.`TrainingSession`.`createdAt`, `main`.`TrainingSession`.`updatedAt` FROM `main`.`TrainingSession` WHERE 1=1 ORDER BY `main`.`TrainingSession`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/train 200 in 448ms (compile: 405ms, render: 43ms)
+ GET / 200 in 122ms (compile: 5ms, render: 118ms)
+ GET / 200 in 62ms (compile: 7ms, render: 55ms)
+prisma:query SELECT COUNT(*) AS `_count$_all` FROM (SELECT `main`.`TrainingData`.`id` FROM `main`.`TrainingData` WHERE 1=1 LIMIT ? OFFSET ?) AS `sub`
+prisma:query SELECT COUNT(*) AS `_count$_all` FROM (SELECT `main`.`TrainingData`.`id` FROM `main`.`TrainingData` WHERE `main`.`TrainingData`.`used` = ? LIMIT ? OFFSET ?) AS `sub`
+prisma:query SELECT COUNT(*) AS `_count$_all` FROM (SELECT `main`.`Knowledge`.`id` FROM `main`.`Knowledge` WHERE 1=1 LIMIT ? OFFSET ?) AS `sub`
+prisma:query SELECT COUNT(*) AS `_count$_all` FROM (SELECT `main`.`Feedback`.`id` FROM `main`.`Feedback` WHERE `main`.`Feedback`.`isPositive` = ? LIMIT ? OFFSET ?) AS `sub`
+prisma:query SELECT `main`.`TrainingData`.`id`, `main`.`TrainingData`.`input`, `main`.`TrainingData`.`output`, `main`.`TrainingData`.`context`, `main`.`TrainingData`.`source`, `main`.`TrainingData`.`category`, `main`.`TrainingData`.`quality`, `main`.`TrainingData`.`used`, `main`.`TrainingData`.`userId`, `main`.`TrainingData`.`createdAt` FROM `main`.`TrainingData` WHERE 1=1 ORDER BY `main`.`TrainingData`.`createdAt` DESC LIMIT ? OFFSET ?
+prisma:query SELECT COUNT(`main`.`Knowledge`.`id`) AS `_count$id`, `main`.`Knowledge`.`category` FROM `main`.`Knowledge` WHERE 1=1 GROUP BY `main`.`Knowledge`.`category` LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`TrainingSession`.`id`, `main`.`TrainingSession`.`name`, `main`.`TrainingSession`.`status`, `main`.`TrainingSession`.`progress`, `main`.`TrainingSession`.`samplesUsed`, `main`.`TrainingSession`.`accuracy`, `main`.`TrainingSession`.`startedAt`, `main`.`TrainingSession`.`completedAt`, `main`.`TrainingSession`.`createdAt`, `main`.`TrainingSession`.`updatedAt` FROM `main`.`TrainingSession` WHERE 1=1 ORDER BY `main`.`TrainingSession`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/train 200 in 15ms (compile: 2ms, render: 13ms)
+ POST /api/chat 200 in 1406ms (compile: 115ms, render: 1291ms)
+ POST /api/chat 200 in 13.7s (compile: 3ms, render: 13.7s)
+ POST /api/chat 200 in 8.8s (compile: 3ms, render: 8.8s)
+ GET / 200 in 78ms (compile: 3ms, render: 75ms)
+prisma:query SELECT 1
+prisma:query SELECT COUNT(*) AS `_count$_all` FROM (SELECT `main`.`TrainingData`.`id` FROM `main`.`TrainingData` WHERE 1=1 LIMIT ? OFFSET ?) AS `sub`
+prisma:query SELECT COUNT(*) AS `_count$_all` FROM (SELECT `main`.`TrainingData`.`id` FROM `main`.`TrainingData` WHERE `main`.`TrainingData`.`used` = ? LIMIT ? OFFSET ?) AS `sub`
+prisma:query SELECT COUNT(*) AS `_count$_all` FROM (SELECT `main`.`Knowledge`.`id` FROM `main`.`Knowledge` WHERE 1=1 LIMIT ? OFFSET ?) AS `sub`
+prisma:query SELECT COUNT(*) AS `_count$_all` FROM (SELECT `main`.`Feedback`.`id` FROM `main`.`Feedback` WHERE `main`.`Feedback`.`isPositive` = ? LIMIT ? OFFSET ?) AS `sub`
+prisma:query SELECT `main`.`TrainingData`.`id`, `main`.`TrainingData`.`input`, `main`.`TrainingData`.`output`, `main`.`TrainingData`.`context`, `main`.`TrainingData`.`source`, `main`.`TrainingData`.`category`, `main`.`TrainingData`.`quality`, `main`.`TrainingData`.`used`, `main`.`TrainingData`.`userId`, `main`.`TrainingData`.`createdAt` FROM `main`.`TrainingData` WHERE 1=1 ORDER BY `main`.`TrainingData`.`createdAt` DESC LIMIT ? OFFSET ?
+prisma:query SELECT COUNT(`main`.`Knowledge`.`id`) AS `_count$id`, `main`.`Knowledge`.`category` FROM `main`.`Knowledge` WHERE 1=1 GROUP BY `main`.`Knowledge`.`category` LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`TrainingSession`.`id`, `main`.`TrainingSession`.`name`, `main`.`TrainingSession`.`status`, `main`.`TrainingSession`.`progress`, `main`.`TrainingSession`.`samplesUsed`, `main`.`TrainingSession`.`accuracy`, `main`.`TrainingSession`.`startedAt`, `main`.`TrainingSession`.`completedAt`, `main`.`TrainingSession`.`createdAt`, `main`.`TrainingSession`.`updatedAt` FROM `main`.`TrainingSession` WHERE 1=1 ORDER BY `main`.`TrainingSession`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/train 200 in 13ms (compile: 3ms, render: 10ms)
+ GET / 200 in 57ms (compile: 4ms, render: 53ms)
+prisma:query SELECT 1
+prisma:query SELECT COUNT(*) AS `_count$_all` FROM (SELECT `main`.`TrainingData`.`id` FROM `main`.`TrainingData` WHERE 1=1 LIMIT ? OFFSET ?) AS `sub`
+prisma:query SELECT COUNT(*) AS `_count$_all` FROM (SELECT `main`.`TrainingData`.`id` FROM `main`.`TrainingData` WHERE `main`.`TrainingData`.`used` = ? LIMIT ? OFFSET ?) AS `sub`
+prisma:query SELECT COUNT(*) AS `_count$_all` FROM (SELECT `main`.`Knowledge`.`id` FROM `main`.`Knowledge` WHERE 1=1 LIMIT ? OFFSET ?) AS `sub`
+prisma:query SELECT COUNT(*) AS `_count$_all` FROM (SELECT `main`.`Feedback`.`id` FROM `main`.`Feedback` WHERE `main`.`Feedback`.`isPositive` = ? LIMIT ? OFFSET ?) AS `sub`
+prisma:query SELECT `main`.`TrainingData`.`id`, `main`.`TrainingData`.`input`, `main`.`TrainingData`.`output`, `main`.`TrainingData`.`context`, `main`.`TrainingData`.`source`, `main`.`TrainingData`.`category`, `main`.`TrainingData`.`quality`, `main`.`TrainingData`.`used`, `main`.`TrainingData`.`userId`, `main`.`TrainingData`.`createdAt` FROM `main`.`TrainingData` WHERE 1=1 ORDER BY `main`.`TrainingData`.`createdAt` DESC LIMIT ? OFFSET ?
+prisma:query SELECT COUNT(`main`.`Knowledge`.`id`) AS `_count$id`, `main`.`Knowledge`.`category` FROM `main`.`Knowledge` WHERE 1=1 GROUP BY `main`.`Knowledge`.`category` LIMIT ? OFFSET ?
+ GET /api/train 200 in 13ms (compile: 2ms, render: 11ms)
+prisma:query SELECT `main`.`TrainingSession`.`id`, `main`.`TrainingSession`.`name`, `main`.`TrainingSession`.`status`, `main`.`TrainingSession`.`progress`, `main`.`TrainingSession`.`samplesUsed`, `main`.`TrainingSession`.`accuracy`, `main`.`TrainingSession`.`startedAt`, `main`.`TrainingSession`.`completedAt`, `main`.`TrainingSession`.`createdAt`, `main`.`TrainingSession`.`updatedAt` FROM `main`.`TrainingSession` WHERE 1=1 ORDER BY `main`.`TrainingSession`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET / 200 in 80ms (compile: 45ms, render: 35ms)
+ GET / 200 in 15ms (compile: 3ms, render: 12ms)
+ GET / 200 in 16ms (compile: 2ms, render: 14ms)
+ GET / 200 in 19ms (compile: 3ms, render: 16ms)
+ GET / 200 in 13ms (compile: 2ms, render: 11ms)
+ GET / 200 in 16ms (compile: 2ms, render: 14ms)
+ GET / 200 in 20ms (compile: 3ms, render: 17ms)
+ GET / 200 in 14ms (compile: 2ms, render: 12ms)
+ GET / 200 in 19ms (compile: 3ms, render: 16ms)
+ GET / 200 in 21ms (compile: 3ms, render: 18ms)
+ GET / 200 in 14ms (compile: 2ms, render: 11ms)
+ GET / 200 in 14ms (compile: 2ms, render: 12ms)
+ GET / 200 in 17ms (compile: 2ms, render: 15ms)
+ GET / 200 in 14ms (compile: 2ms, render: 11ms)
+ GET / 200 in 15ms (compile: 4ms, render: 12ms)
+ GET / 200 in 21ms (compile: 4ms, render: 18ms)
+ GET / 200 in 14ms (compile: 2ms, render: 12ms)
+ GET / 200 in 13ms (compile: 3ms, render: 11ms)
+ GET / 200 in 13ms (compile: 2ms, render: 11ms)
+ GET / 200 in 19ms (compile: 3ms, render: 16ms)
+ GET / 200 in 18ms (compile: 3ms, render: 15ms)
+ GET / 200 in 22ms (compile: 4ms, render: 19ms)
+ GET / 200 in 13ms (compile: 2ms, render: 11ms)
+ GET / 200 in 13ms (compile: 2ms, render: 11ms)
+ GET / 200 in 17ms (compile: 2ms, render: 15ms)
+ GET / 200 in 19ms (compile: 3ms, render: 15ms)
+ GET / 200 in 24ms (compile: 3ms, render: 20ms)
+ GET / 200 in 15ms (compile: 2ms, render: 13ms)
+ GET / 200 in 14ms (compile: 3ms, render: 11ms)
+ GET / 200 in 18ms (compile: 3ms, render: 15ms)
+ GET / 200 in 13ms (compile: 2ms, render: 10ms)
+ GET / 200 in 13ms (compile: 2ms, render: 11ms)
+ GET / 200 in 17ms (compile: 6ms, render: 11ms)
+ GET / 200 in 14ms (compile: 2ms, render: 11ms)
+ GET / 200 in 22ms (compile: 4ms, render: 17ms)
+ GET / 200 in 13ms (compile: 2ms, render: 10ms)
+ GET / 200 in 14ms (compile: 2ms, render: 12ms)
+ GET / 200 in 21ms (compile: 2ms, render: 18ms)
+ GET / 200 in 191ms (compile: 5ms, render: 186ms)
+prisma:query SELECT 1
+prisma:query SELECT COUNT(*) AS `_count$_all` FROM (SELECT `main`.`TrainingData`.`id` FROM `main`.`TrainingData` WHERE 1=1 LIMIT ? OFFSET ?) AS `sub`
+prisma:query SELECT COUNT(*) AS `_count$_all` FROM (SELECT `main`.`TrainingData`.`id` FROM `main`.`TrainingData` WHERE `main`.`TrainingData`.`used` = ? LIMIT ? OFFSET ?) AS `sub`
+prisma:query SELECT COUNT(*) AS `_count$_all` FROM (SELECT `main`.`Knowledge`.`id` FROM `main`.`Knowledge` WHERE 1=1 LIMIT ? OFFSET ?) AS `sub`
+prisma:query SELECT COUNT(*) AS `_count$_all` FROM (SELECT `main`.`Feedback`.`id` FROM `main`.`Feedback` WHERE `main`.`Feedback`.`isPositive` = ? LIMIT ? OFFSET ?) AS `sub`
+prisma:query SELECT `main`.`TrainingData`.`id`, `main`.`TrainingData`.`input`, `main`.`TrainingData`.`output`, `main`.`TrainingData`.`context`, `main`.`TrainingData`.`source`, `main`.`TrainingData`.`category`, `main`.`TrainingData`.`quality`, `main`.`TrainingData`.`used`, `main`.`TrainingData`.`userId`, `main`.`TrainingData`.`createdAt` FROM `main`.`TrainingData` WHERE 1=1 ORDER BY `main`.`TrainingData`.`createdAt` DESC LIMIT ? OFFSET ?
+prisma:query SELECT COUNT(`main`.`Knowledge`.`id`) AS `_count$id`, `main`.`Knowledge`.`category` FROM `main`.`Knowledge` WHERE 1=1 GROUP BY `main`.`Knowledge`.`category` LIMIT ? OFFSET ?
+ GET /api/train 200 in 59ms (compile: 35ms, render: 24ms)
+prisma:query SELECT `main`.`TrainingSession`.`id`, `main`.`TrainingSession`.`name`, `main`.`TrainingSession`.`status`, `main`.`TrainingSession`.`progress`, `main`.`TrainingSession`.`samplesUsed`, `main`.`TrainingSession`.`accuracy`, `main`.`TrainingSession`.`startedAt`, `main`.`TrainingSession`.`completedAt`, `main`.`TrainingSession`.`createdAt`, `main`.`TrainingSession`.`updatedAt` FROM `main`.`TrainingSession` WHERE 1=1 ORDER BY `main`.`TrainingSession`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET / 200 in 64ms (compile: 4ms, render: 60ms)
+prisma:query SELECT 1
+prisma:query SELECT COUNT(*) AS `_count$_all` FROM (SELECT `main`.`TrainingData`.`id` FROM `main`.`TrainingData` WHERE 1=1 LIMIT ? OFFSET ?) AS `sub`
+prisma:query SELECT COUNT(*) AS `_count$_all` FROM (SELECT `main`.`TrainingData`.`id` FROM `main`.`TrainingData` WHERE `main`.`TrainingData`.`used` = ? LIMIT ? OFFSET ?) AS `sub`
+prisma:query SELECT COUNT(*) AS `_count$_all` FROM (SELECT `main`.`Knowledge`.`id` FROM `main`.`Knowledge` WHERE 1=1 LIMIT ? OFFSET ?) AS `sub`
+prisma:query SELECT COUNT(*) AS `_count$_all` FROM (SELECT `main`.`Feedback`.`id` FROM `main`.`Feedback` WHERE `main`.`Feedback`.`isPositive` = ? LIMIT ? OFFSET ?) AS `sub`
+prisma:query SELECT `main`.`TrainingData`.`id`, `main`.`TrainingData`.`input`, `main`.`TrainingData`.`output`, `main`.`TrainingData`.`context`, `main`.`TrainingData`.`source`, `main`.`TrainingData`.`category`, `main`.`TrainingData`.`quality`, `main`.`TrainingData`.`used`, `main`.`TrainingData`.`userId`, `main`.`TrainingData`.`createdAt` FROM `main`.`TrainingData` WHERE 1=1 ORDER BY `main`.`TrainingData`.`createdAt` DESC LIMIT ? OFFSET ?
+prisma:query SELECT COUNT(`main`.`Knowledge`.`id`) AS `_count$id`, `main`.`Knowledge`.`category` FROM `main`.`Knowledge` WHERE 1=1 GROUP BY `main`.`Knowledge`.`category` LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`TrainingSession`.`id`, `main`.`TrainingSession`.`name`, `main`.`TrainingSession`.`status`, `main`.`TrainingSession`.`progress`, `main`.`TrainingSession`.`samplesUsed`, `main`.`TrainingSession`.`accuracy`, `main`.`TrainingSession`.`startedAt`, `main`.`TrainingSession`.`completedAt`, `main`.`TrainingSession`.`createdAt`, `main`.`TrainingSession`.`updatedAt` FROM `main`.`TrainingSession` WHERE 1=1 ORDER BY `main`.`TrainingSession`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/train 200 in 15ms (compile: 2ms, render: 13ms)
+ GET / 200 in 62ms (compile: 5ms, render: 57ms)
+prisma:query SELECT 1
+prisma:query SELECT COUNT(*) AS `_count$_all` FROM (SELECT `main`.`TrainingData`.`id` FROM `main`.`TrainingData` WHERE 1=1 LIMIT ? OFFSET ?) AS `sub`
+prisma:query SELECT COUNT(*) AS `_count$_all` FROM (SELECT `main`.`TrainingData`.`id` FROM `main`.`TrainingData` WHERE `main`.`TrainingData`.`used` = ? LIMIT ? OFFSET ?) AS `sub`
+prisma:query SELECT COUNT(*) AS `_count$_all` FROM (SELECT `main`.`Knowledge`.`id` FROM `main`.`Knowledge` WHERE 1=1 LIMIT ? OFFSET ?) AS `sub`
+prisma:query SELECT COUNT(*) AS `_count$_all` FROM (SELECT `main`.`Feedback`.`id` FROM `main`.`Feedback` WHERE `main`.`Feedback`.`isPositive` = ? LIMIT ? OFFSET ?) AS `sub`
+prisma:query SELECT `main`.`TrainingData`.`id`, `main`.`TrainingData`.`input`, `main`.`TrainingData`.`output`, `main`.`TrainingData`.`context`, `main`.`TrainingData`.`source`, `main`.`TrainingData`.`category`, `main`.`TrainingData`.`quality`, `main`.`TrainingData`.`used`, `main`.`TrainingData`.`userId`, `main`.`TrainingData`.`createdAt` FROM `main`.`TrainingData` WHERE 1=1 ORDER BY `main`.`TrainingData`.`createdAt` DESC LIMIT ? OFFSET ?
+prisma:query SELECT COUNT(`main`.`Knowledge`.`id`) AS `_count$id`, `main`.`Knowledge`.`category` FROM `main`.`Knowledge` WHERE 1=1 GROUP BY `main`.`Knowledge`.`category` LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`TrainingSession`.`id`, `main`.`TrainingSession`.`name`, `main`.`TrainingSession`.`status`, `main`.`TrainingSession`.`progress`, `main`.`TrainingSession`.`samplesUsed`, `main`.`TrainingSession`.`accuracy`, `main`.`TrainingSession`.`startedAt`, `main`.`TrainingSession`.`completedAt`, `main`.`TrainingSession`.`createdAt`, `main`.`TrainingSession`.`updatedAt` FROM `main`.`TrainingSession` WHERE 1=1 ORDER BY `main`.`TrainingSession`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/train 200 in 19ms (compile: 2ms, render: 17ms)
+ GET / 200 in 54ms (compile: 2ms, render: 51ms)
+prisma:query SELECT 1
+prisma:query SELECT COUNT(*) AS `_count$_all` FROM (SELECT `main`.`TrainingData`.`id` FROM `main`.`TrainingData` WHERE 1=1 LIMIT ? OFFSET ?) AS `sub`
+prisma:query SELECT COUNT(*) AS `_count$_all` FROM (SELECT `main`.`TrainingData`.`id` FROM `main`.`TrainingData` WHERE `main`.`TrainingData`.`used` = ? LIMIT ? OFFSET ?) AS `sub`
+prisma:query SELECT COUNT(*) AS `_count$_all` FROM (SELECT `main`.`Knowledge`.`id` FROM `main`.`Knowledge` WHERE 1=1 LIMIT ? OFFSET ?) AS `sub`
+prisma:query SELECT COUNT(*) AS `_count$_all` FROM (SELECT `main`.`Feedback`.`id` FROM `main`.`Feedback` WHERE `main`.`Feedback`.`isPositive` = ? LIMIT ? OFFSET ?) AS `sub`
+prisma:query SELECT `main`.`TrainingData`.`id`, `main`.`TrainingData`.`input`, `main`.`TrainingData`.`output`, `main`.`TrainingData`.`context`, `main`.`TrainingData`.`source`, `main`.`TrainingData`.`category`, `main`.`TrainingData`.`quality`, `main`.`TrainingData`.`used`, `main`.`TrainingData`.`userId`, `main`.`TrainingData`.`createdAt` FROM `main`.`TrainingData` WHERE 1=1 ORDER BY `main`.`TrainingData`.`createdAt` DESC LIMIT ? OFFSET ?
+prisma:query SELECT COUNT(`main`.`Knowledge`.`id`) AS `_count$id`, `main`.`Knowledge`.`category` FROM `main`.`Knowledge` WHERE 1=1 GROUP BY `main`.`Knowledge`.`category` LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`TrainingSession`.`id`, `main`.`TrainingSession`.`name`, `main`.`TrainingSession`.`status`, `main`.`TrainingSession`.`progress`, `main`.`TrainingSession`.`samplesUsed`, `main`.`TrainingSession`.`accuracy`, `main`.`TrainingSession`.`startedAt`, `main`.`TrainingSession`.`completedAt`, `main`.`TrainingSession`.`createdAt`, `main`.`TrainingSession`.`updatedAt` FROM `main`.`TrainingSession` WHERE 1=1 ORDER BY `main`.`TrainingSession`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/train 200 in 13ms (compile: 1649µs, render: 11ms)
+ GET / 200 in 58ms (compile: 5ms, render: 54ms)
+prisma:query SELECT 1
+prisma:query SELECT COUNT(*) AS `_count$_all` FROM (SELECT `main`.`TrainingData`.`id` FROM `main`.`TrainingData` WHERE 1=1 LIMIT ? OFFSET ?) AS `sub`
+prisma:query SELECT COUNT(*) AS `_count$_all` FROM (SELECT `main`.`TrainingData`.`id` FROM `main`.`TrainingData` WHERE `main`.`TrainingData`.`used` = ? LIMIT ? OFFSET ?) AS `sub`
+prisma:query SELECT COUNT(*) AS `_count$_all` FROM (SELECT `main`.`Knowledge`.`id` FROM `main`.`Knowledge` WHERE 1=1 LIMIT ? OFFSET ?) AS `sub`
+prisma:query SELECT COUNT(*) AS `_count$_all` FROM (SELECT `main`.`Feedback`.`id` FROM `main`.`Feedback` WHERE `main`.`Feedback`.`isPositive` = ? LIMIT ? OFFSET ?) AS `sub`
+prisma:query SELECT `main`.`TrainingData`.`id`, `main`.`TrainingData`.`input`, `main`.`TrainingData`.`output`, `main`.`TrainingData`.`context`, `main`.`TrainingData`.`source`, `main`.`TrainingData`.`category`, `main`.`TrainingData`.`quality`, `main`.`TrainingData`.`used`, `main`.`TrainingData`.`userId`, `main`.`TrainingData`.`createdAt` FROM `main`.`TrainingData` WHERE 1=1 ORDER BY `main`.`TrainingData`.`createdAt` DESC LIMIT ? OFFSET ?
+prisma:query SELECT COUNT(`main`.`Knowledge`.`id`) AS `_count$id`, `main`.`Knowledge`.`category` FROM `main`.`Knowledge` WHERE 1=1 GROUP BY `main`.`Knowledge`.`category` LIMIT ? OFFSET ?
+prisma:query SELECT `main`.`TrainingSession`.`id`, `main`.`TrainingSession`.`name`, `main`.`TrainingSession`.`status`, `main`.`TrainingSession`.`progress`, `main`.`TrainingSession`.`samplesUsed`, `main`.`TrainingSession`.`accuracy`, `main`.`TrainingSession`.`startedAt`, `main`.`TrainingSession`.`completedAt`, `main`.`TrainingSession`.`createdAt`, `main`.`TrainingSession`.`updatedAt` FROM `main`.`TrainingSession` WHERE 1=1 ORDER BY `main`.`TrainingSession`.`createdAt` DESC LIMIT ? OFFSET ?
+ GET /api/train 200 in 12ms (compile: 1835µs, render: 10ms)
+✓ Compiled in 238ms
+ GET /api/stats 200 in 105ms (compile: 97ms, render: 8ms)
+ GET /api/stats 200 in 5ms (compile: 1699µs, render: 4ms)
+ GET /api/stats 200 in 5ms (compile: 1671µs, render: 3ms)
+ GET /api/stats 200 in 6ms (compile: 1744µs, render: 5ms)
+ GET /api/stats 200 in 6ms (compile: 1850µs, render: 4ms)
+ GET / 200 in 205ms (compile: 52ms, render: 153ms)
+ GET /api/stats 200 in 5ms (compile: 1569µs, render: 3ms)
+ GET /api/stats 200 in 5ms (compile: 1622µs, render: 3ms)
+ GET /api/stats 200 in 8ms (compile: 4ms, render: 4ms)
+ GET /api/stats 200 in 7ms (compile: 3ms, render: 5ms)
+ GET /api/stats 200 in 7ms (compile: 3ms, render: 4ms)
+ POST /api/chat 200 in 1304ms (compile: 62ms, render: 1241ms)
+ GET /api/stats 200 in 7ms (compile: 3ms, render: 4ms)
+ GET /api/stats 200 in 6ms (compile: 2ms, render: 4ms)
+ GET /api/stats 200 in 6ms (compile: 1893µs, render: 5ms)
+ GET /api/stats 200 in 6ms (compile: 2ms, render: 3ms)
+ GET /api/stats 200 in 6ms (compile: 2ms, render: 3ms)
+ GET /api/stats 200 in 7ms (compile: 2ms, render: 5ms)
+ GET /api/stats 200 in 5ms (compile: 1794µs, render: 3ms)
+ POST /api/chat 200 in 1198ms (compile: 1945µs, render: 1196ms)
+ GET /api/stats 200 in 6ms (compile: 1940µs, render: 4ms)
+ GET /api/stats 200 in 4ms (compile: 1663µs, render: 2ms)
+ GET /api/stats 200 in 4ms (compile: 1533µs, render: 3ms)
+ GET /api/stats 200 in 5ms (compile: 1740µs, render: 3ms)
+ GET /api/stats 200 in 5ms (compile: 1724µs, render: 3ms)
+ GET /api/stats 200 in 5ms (compile: 1618µs, render: 3ms)
+ GET /api/stats 200 in 5ms (compile: 2ms, render: 3ms)
+ GET /api/stats 200 in 6ms (compile: 2ms, render: 3ms)
+ GET /api/stats 200 in 5ms (compile: 1966µs, render: 3ms)
+ GET /api/stats 200 in 5ms (compile: 1730µs, render: 3ms)
+ GET /api/stats 200 in 4ms (compile: 1765µs, render: 3ms)
+ GET /api/stats 200 in 5ms (compile: 1809µs, render: 3ms)
+ GET /api/stats 200 in 5ms (compile: 1833µs, render: 3ms)
+ GET /api/stats 200 in 4ms (compile: 1686µs, render: 3ms)
+ GET /api/stats 200 in 4ms (compile: 1555µs, render: 3ms)
+ GET /api/stats 200 in 4ms (compile: 1755µs, render: 3ms)
+ GET /api/stats 200 in 5ms (compile: 2ms, render: 3ms)
+ GET /api/stats 200 in 6ms (compile: 3ms, render: 3ms)
+ GET /api/stats 200 in 5ms (compile: 2ms, render: 3ms)
+ GET /api/stats 200 in 5ms (compile: 2ms, render: 3ms)
+ POST /api/chat 200 in 925ms (compile: 1728µs, render: 923ms)
+ GET /api/stats 200 in 4ms (compile: 1636µs, render: 3ms)
+ GET /api/stats 200 in 6ms (compile: 3ms, render: 3ms)
+ GET /api/stats 200 in 4ms (compile: 1800µs, render: 3ms)
+ GET /api/stats 200 in 6ms (compile: 2ms, render: 3ms)
+ GET /api/stats 200 in 5ms (compile: 2ms, render: 3ms)
+ GET /api/stats 200 in 6ms (compile: 3ms, render: 3ms)
+ GET /api/stats 200 in 11ms (compile: 2ms, render: 9ms)
+ GET / 200 in 59ms (compile: 7ms, render: 52ms)
+ GET /api/stats 200 in 6ms (compile: 1914µs, render: 4ms)
+ GET /api/stats 200 in 5ms (compile: 2ms, render: 3ms)
+ GET /api/stats 200 in 6ms (compile: 1891µs, render: 4ms)
+ GET /api/stats 200 in 6ms (compile: 2ms, render: 3ms)
+ GET /api/stats 200 in 7ms (compile: 3ms, render: 5ms)
+ GET /api/stats 200 in 6ms (compile: 2ms, render: 3ms)
+ POST /api/chat 200 in 2.0s (compile: 4ms, render: 2.0s)
+ GET /api/stats 200 in 7ms (compile: 1774µs, render: 5ms)
+ GET /api/stats 200 in 6ms (compile: 2ms, render: 4ms)
+ GET /api/stats 200 in 5ms (compile: 1619µs, render: 3ms)
+ GET /api/stats 200 in 6ms (compile: 1668µs, render: 4ms)
+ GET /api/stats 200 in 5ms (compile: 1840µs, render: 3ms)
+ GET /api/stats 200 in 6ms (compile: 1714µs, render: 4ms)
+ GET /api/stats 200 in 6ms (compile: 1983µs, render: 4ms)
+ GET /api/stats 200 in 6ms (compile: 2ms, render: 3ms)
+ GET /api/stats 200 in 6ms (compile: 3ms, render: 3ms)
+ GET /api/stats 200 in 6ms (compile: 1759µs, render: 4ms)
+ GET /api/stats 200 in 7ms (compile: 2ms, render: 5ms)
+ GET /api/stats 200 in 5ms (compile: 1670µs, render: 3ms)
+ GET /api/stats 200 in 5ms (compile: 1759µs, render: 3ms)
+ GET /api/stats 200 in 5ms (compile: 1840µs, render: 3ms)
+ GET /api/stats 200 in 5ms (compile: 1896µs, render: 3ms)
+ GET /api/stats 200 in 5ms (compile: 1685µs, render: 3ms)
+ GET /api/stats 200 in 7ms (compile: 3ms, render: 4ms)
+ GET /api/stats 200 in 6ms (compile: 3ms, render: 3ms)
+ GET /api/stats 200 in 7ms (compile: 2ms, render: 4ms)
+ GET /api/stats 200 in 7ms (compile: 1713µs, render: 5ms)
+ GET /api/stats 200 in 6ms (compile: 1853µs, render: 4ms)
+ GET /api/stats 200 in 5ms (compile: 1552µs, render: 3ms)
+ GET /api/stats 200 in 5ms (compile: 1752µs, render: 3ms)
+ GET /api/stats 200 in 5ms (compile: 1871µs, render: 3ms)
+ GET /api/stats 200 in 5ms (compile: 1839µs, render: 3ms)
+ GET / 200 in 61ms (compile: 3ms, render: 58ms)
+ GET /api/stats 200 in 5ms (compile: 1733µs, render: 3ms)
+ GET /api/stats 200 in 5ms (compile: 1795µs, render: 4ms)
+ GET /api/stats 200 in 7ms (compile: 2ms, render: 5ms)
+ GET /api/stats 200 in 7ms (compile: 2ms, render: 4ms)
+ GET /api/stats 200 in 5ms (compile: 1865µs, render: 3ms)
+ GET /api/stats 200 in 5ms (compile: 1833µs, render: 3ms)
+ GET /api/stats 200 in 5ms (compile: 1834µs, render: 3ms)
+ GET /api/stats 200 in 4ms (compile: 1655µs, render: 3ms)
+ GET /api/stats 200 in 5ms (compile: 1623µs, render: 3ms)
+ GET /api/stats 200 in 4ms (compile: 1678µs, render: 3ms)
+ GET /api/stats 200 in 5ms (compile: 1822µs, render: 3ms)
+ GET /api/stats 200 in 6ms (compile: 3ms, render: 3ms)
+ GET /api/stats 200 in 6ms (compile: 1850µs, render: 4ms)
+ GET /api/stats 200 in 6ms (compile: 3ms, render: 4ms)
+ GET /api/stats 200 in 5ms (compile: 1774µs, render: 4ms)
+ GET /api/stats 200 in 5ms (compile: 1671µs, render: 3ms)
+ GET /api/stats 200 in 5ms (compile: 2ms, render: 3ms)
+ GET /api/stats 200 in 6ms (compile: 3ms, render: 3ms)
+ GET /api/stats 200 in 5ms (compile: 2ms, render: 3ms)
+ GET /api/stats 200 in 7ms (compile: 2ms, render: 4ms)
+ GET /api/stats 200 in 5ms (compile: 1646µs, render: 4ms)
+ GET /api/stats 200 in 4ms (compile: 1522µs, render: 3ms)
+ GET /api/stats 200 in 5ms (compile: 1914µs, render: 3ms)
+ GET /api/stats 200 in 5ms (compile: 2ms, render: 3ms)
+ GET /api/stats 200 in 5ms (compile: 1953µs, render: 3ms)
+ GET /api/stats 200 in 5ms (compile: 1843µs, render: 3ms)
+ GET /api/stats 200 in 5ms (compile: 3ms, render: 3ms)
+ GET /api/stats 200 in 6ms (compile: 2ms, render: 4ms)
+ GET /api/stats 200 in 6ms (compile: 1669µs, render: 4ms)
+ GET /api/stats 200 in 6ms (compile: 1606µs, render: 4ms)
+ GET /api/stats 200 in 5ms (compile: 1610µs, render: 4ms)
+ GET /api/stats 200 in 5ms (compile: 1737µs, render: 3ms)
+ GET /api/stats 200 in 5ms (compile: 1734µs, render: 3ms)
+ GET /api/stats 200 in 5ms (compile: 1677µs, render: 3ms)
+ GET /api/stats 200 in 5ms (compile: 2ms, render: 3ms)
+ GET /api/stats 200 in 5ms (compile: 1565µs, render: 4ms)
+ GET /api/stats 200 in 7ms (compile: 3ms, render: 5ms)
+ GET /api/stats 200 in 7ms (compile: 3ms, render: 5ms)
+ GET /api/stats 200 in 5ms (compile: 1674µs, render: 3ms)
+ GET /api/stats 200 in 5ms (compile: 1522µs, render: 4ms)
+ GET /api/stats 200 in 5ms (compile: 1504µs, render: 3ms)
+ GET /api/stats 200 in 5ms (compile: 1752µs, render: 3ms)
+ GET /api/stats 200 in 6ms (compile: 2ms, render: 3ms)
+ GET /api/stats 200 in 6ms (compile: 3ms, render: 3ms)
+ GET /api/stats 200 in 6ms (compile: 1854µs, render: 4ms)
+ GET / 200 in 58ms (compile: 5ms, render: 53ms)
+ GET /api/stats 200 in 6ms (compile: 1554µs, render: 4ms)
+ GET /api/stats 200 in 7ms (compile: 3ms, render: 4ms)
+ GET /api/stats 200 in 6ms (compile: 2ms, render: 4ms)
+ GET /api/stats 200 in 6ms (compile: 2ms, render: 4ms)
+ GET /api/stats 200 in 5ms (compile: 1723µs, render: 3ms)
+ GET /api/stats 200 in 4ms (compile: 1728µs, render: 3ms)
+ GET /api/stats 200 in 5ms (compile: 1752µs, render: 3ms)
+ GET /api/stats 200 in 4ms (compile: 1548µs, render: 2ms)
+ GET /api/stats 200 in 4ms (compile: 1593µs, render: 2ms)
+ GET /api/stats 200 in 4ms (compile: 1595µs, render: 3ms)
+ GET /api/stats 200 in 4ms (compile: 1700µs, render: 3ms)
+ GET /api/stats 200 in 5ms (compile: 2ms, render: 3ms)
+ GET /api/stats 200 in 6ms (compile: 3ms, render: 3ms)
+ GET /api/stats 200 in 6ms (compile: 1938µs, render: 4ms)
+ GET /api/stats 200 in 7ms (compile: 2ms, render: 4ms)
+ GET /api/stats 200 in 5ms (compile: 2ms, render: 3ms)
+ GET /api/stats 200 in 5ms (compile: 1652µs, render: 3ms)
+ GET /api/stats 200 in 5ms (compile: 1828µs, render: 3ms)
+ GET /api/stats 200 in 5ms (compile: 1761µs, render: 3ms)
+ GET /api/stats 200 in 7ms (compile: 1817µs, render: 5ms)
+ GET /api/stats 200 in 5ms (compile: 1664µs, render: 3ms)
+ GET /api/stats 200 in 6ms (compile: 2ms, render: 4ms)
+ GET /api/stats 200 in 5ms (compile: 1796µs, render: 3ms)
+ GET /api/stats 200 in 4ms (compile: 1702µs, render: 3ms)
+ GET /api/stats 200 in 4ms (compile: 1498µs, render: 3ms)
+ GET /api/stats 200 in 4ms (compile: 1510µs, render: 3ms)
+ GET /api/stats 200 in 5ms (compile: 1568µs, render: 3ms)
+ GET /api/stats 200 in 5ms (compile: 2ms, render: 3ms)
+ GET /api/stats 200 in 6ms (compile: 3ms, render: 3ms)
+ GET /api/stats 200 in 5ms (compile: 1584µs, render: 3ms)
+ GET /api/stats 200 in 4ms (compile: 1542µs, render: 3ms)
+ GET /api/stats 200 in 5ms (compile: 1690µs, render: 3ms)
+ GET /api/stats 200 in 5ms (compile: 1554µs, render: 3ms)
+ GET /api/stats 200 in 6ms (compile: 2ms, render: 3ms)
+prisma:query SELECT 1
+prisma:query INSERT INTO `main`.`AgentTask` (`id`, `name`, `description`, `status`, `agentType`, `priority`, `startedAt`, `createdAt`, `updatedAt`) VALUES (?,?,?,?,?,?,?,?,?) RETURNING `id` AS `id`, `name` AS `name`, `description` AS `description`, `status` AS `status`, `agentType` AS `agentType`, `input` AS `input`, `output` AS `output`, `error` AS `error`, `priority` AS `priority`, `startedAt` AS `startedAt`, `completedAt` AS `completedAt`, `createdAt` AS `createdAt`, `updatedAt` AS `updatedAt`
+ GET /api/stats 200 in 5ms (compile: 1519µs, render: 3ms)
+ GET /api/stats 200 in 5ms (compile: 2ms, render: 3ms)
+ GET /api/stats 200 in 5ms (compile: 1616µs, render: 4ms)
+ GET /api/stats 200 in 5ms (compile: 1569µs, render: 4ms)
+ GET /api/stats 200 in 4ms (compile: 1631µs, render: 3ms)
+prisma:query SELECT 1
+prisma:query INSERT INTO `main`.`Knowledge` (`id`, `title`, `content`, `source`, `category`, `tags`, `confidence`, `verified`, `userId`, `createdAt`, `updatedAt`) VALUES (?,?,?,?,?,?,?,?,?,?,?) RETURNING `id` AS `id`, `title` AS `title`, `content` AS `content`, `source` AS `source`, `category` AS `category`, `tags` AS `tags`, `embedding` AS `embedding`, `confidence` AS `confidence`, `verified` AS `verified`, `userId` AS `userId`, `createdAt` AS `createdAt`, `updatedAt` AS `updatedAt`
+prisma:query INSERT INTO `main`.`TrainingData` (`id`, `input`, `output`, `context`, `source`, `category`, `quality`, `used`, `userId`, `createdAt`) VALUES (?,?,?,?,?,?,?,?,?,?) RETURNING `id` AS `id`, `input` AS `input`, `output` AS `output`, `context` AS `context`, `source` AS `source`, `category` AS `category`, `quality` AS `quality`, `used` AS `used`, `userId` AS `userId`, `createdAt` AS `createdAt`
+prisma:query UPDATE `main`.`AgentTask` SET `status` = ?, `completedAt` = ?, `output` = ?, `updatedAt` = ? WHERE (`main`.`AgentTask`.`id` = ? AND 1=1) RETURNING `id` AS `id`, `name` AS `name`, `description` AS `description`, `status` AS `status`, `agentType` AS `agentType`, `input` AS `input`, `output` AS `output`, `error` AS `error`, `priority` AS `priority`, `startedAt` AS `startedAt`, `completedAt` AS `completedAt`, `createdAt` AS `createdAt`, `updatedAt` AS `updatedAt`
+ POST /api/learn 200 in 22.9s (compile: 100ms, render: 22.8s)
+ GET /api/stats 200 in 5ms (compile: 1735µs, render: 3ms)
+ GET /api/stats 200 in 10ms (compile: 6ms, render: 4ms)
+ GET /api/stats 200 in 7ms (compile: 3ms, render: 4ms)
+ GET /api/stats 200 in 6ms (compile: 2ms, render: 4ms)
+ GET /api/stats 200 in 6ms (compile: 2ms, render: 4ms)
+ GET /api/stats 200 in 5ms (compile: 1731µs, render: 3ms)
+prisma:query SELECT 1
+prisma:query INSERT INTO `main`.`AgentTask` (`id`, `name`, `description`, `status`, `agentType`, `priority`, `startedAt`, `createdAt`, `updatedAt`) VALUES (?,?,?,?,?,?,?,?,?) RETURNING `id` AS `id`, `name` AS `name`, `description` AS `description`, `status` AS `status`, `agentType` AS `agentType`, `input` AS `input`, `output` AS `output`, `error` AS `error`, `priority` AS `priority`, `startedAt` AS `startedAt`, `completedAt` AS `completedAt`, `createdAt` AS `createdAt`, `updatedAt` AS `updatedAt`
+ GET /api/stats 200 in 6ms (compile: 1839µs, render: 4ms)
+ GET /api/stats 200 in 6ms (compile: 2ms, render: 4ms)
+ GET /api/stats 200 in 4ms (compile: 1521µs, render: 3ms)
+prisma:query SELECT 1
+prisma:query INSERT INTO `main`.`Knowledge` (`id`, `title`, `content`, `source`, `category`, `tags`, `confidence`, `verified`, `userId`, `createdAt`, `updatedAt`) VALUES (?,?,?,?,?,?,?,?,?,?,?) RETURNING `id` AS `id`, `title` AS `title`, `content` AS `content`, `source` AS `source`, `category` AS `category`, `tags` AS `tags`, `embedding` AS `embedding`, `confidence` AS `confidence`, `verified` AS `verified`, `userId` AS `userId`, `createdAt` AS `createdAt`, `updatedAt` AS `updatedAt`
+prisma:query INSERT INTO `main`.`TrainingData` (`id`, `input`, `output`, `context`, `source`, `category`, `quality`, `used`, `userId`, `createdAt`) VALUES (?,?,?,?,?,?,?,?,?,?) RETURNING `id` AS `id`, `input` AS `input`, `output` AS `output`, `context` AS `context`, `source` AS `source`, `category` AS `category`, `quality` AS `quality`, `used` AS `used`, `userId` AS `userId`, `createdAt` AS `createdAt`
+prisma:query UPDATE `main`.`AgentTask` SET `status` = ?, `completedAt` = ?, `output` = ?, `updatedAt` = ? WHERE (`main`.`AgentTask`.`id` = ? AND 1=1) RETURNING `id` AS `id`, `name` AS `name`, `description` AS `description`, `status` AS `status`, `agentType` AS `agentType`, `input` AS `input`, `output` AS `output`, `error` AS `error`, `priority` AS `priority`, `startedAt` AS `startedAt`, `completedAt` AS `completedAt`, `createdAt` AS `createdAt`, `updatedAt` AS `updatedAt`
+ POST /api/learn 200 in 17.7s (compile: 1526µs, render: 17.7s)
+ GET /api/stats 200 in 5ms (compile: 1703µs, render: 3ms)
+ GET /api/stats 200 in 7ms (compile: 3ms, render: 4ms)
+ GET /api/stats 200 in 5ms (compile: 1716µs, render: 4ms)
+ GET /api/stats 200 in 4ms (compile: 1654µs, render: 3ms)
+ GET /api/stats 200 in 4ms (compile: 1543µs, render: 3ms)
+ GET /api/stats 200 in 8ms (compile: 5ms, render: 3ms)
+ GET /api/stats 200 in 5ms (compile: 2ms, render: 3ms)
+ POST /api/chat 200 in 12.7s (compile: 1680µs, render: 12.7s)
+ GET /api/stats 200 in 5ms (compile: 1632µs, render: 4ms)
+ GET /api/stats 200 in 6ms (compile: 1823µs, render: 4ms)
+ GET /api/stats 200 in 5ms (compile: 1584µs, render: 3ms)
+ GET /api/stats 200 in 6ms (compile: 1992µs, render: 4ms)
+ GET /api/stats 200 in 5ms (compile: 2ms, render: 3ms)
+prisma:query SELECT 1
+prisma:query INSERT INTO `main`.`AgentTask` (`id`, `name`, `description`, `status`, `agentType`, `priority`, `startedAt`, `createdAt`, `updatedAt`) VALUES (?,?,?,?,?,?,?,?,?) RETURNING `id` AS `id`, `name` AS `name`, `description` AS `description`, `status` AS `status`, `agentType` AS `agentType`, `input` AS `input`, `output` AS `output`, `error` AS `error`, `priority` AS `priority`, `startedAt` AS `startedAt`, `completedAt` AS `completedAt`, `createdAt` AS `createdAt`, `updatedAt` AS `updatedAt`
+ GET /api/stats 200 in 5ms (compile: 2ms, render: 3ms)
+ GET /api/stats 200 in 6ms (compile: 3ms, render: 3ms)
+ GET /api/stats 200 in 5ms (compile: 2ms, render: 3ms)
+ GET /api/stats 200 in 6ms (compile: 1670µs, render: 4ms)
+prisma:query SELECT 1
+prisma:query INSERT INTO `main`.`Knowledge` (`id`, `title`, `content`, `source`, `category`, `tags`, `confidence`, `verified`, `userId`, `createdAt`, `updatedAt`) VALUES (?,?,?,?,?,?,?,?,?,?,?) RETURNING `id` AS `id`, `title` AS `title`, `content` AS `content`, `source` AS `source`, `category` AS `category`, `tags` AS `tags`, `embedding` AS `embedding`, `confidence` AS `confidence`, `verified` AS `verified`, `userId` AS `userId`, `createdAt` AS `createdAt`, `updatedAt` AS `updatedAt`
+prisma:query INSERT INTO `main`.`TrainingData` (`id`, `input`, `output`, `context`, `source`, `category`, `quality`, `used`, `userId`, `createdAt`) VALUES (?,?,?,?,?,?,?,?,?,?) RETURNING `id` AS `id`, `input` AS `input`, `output` AS `output`, `context` AS `context`, `source` AS `source`, `category` AS `category`, `quality` AS `quality`, `used` AS `used`, `userId` AS `userId`, `createdAt` AS `createdAt`
+ POST /api/learn 200 in 23.6s (compile: 1775µs, render: 23.6s)
+prisma:query UPDATE `main`.`AgentTask` SET `status` = ?, `completedAt` = ?, `output` = ?, `updatedAt` = ? WHERE (`main`.`AgentTask`.`id` = ? AND 1=1) RETURNING `id` AS `id`, `name` AS `name`, `description` AS `description`, `status` AS `status`, `agentType` AS `agentType`, `input` AS `input`, `output` AS `output`, `error` AS `error`, `priority` AS `priority`, `startedAt` AS `startedAt`, `completedAt` AS `completedAt`, `createdAt` AS `createdAt`, `updatedAt` AS `updatedAt`
+ GET /api/stats 200 in 5ms (compile: 1610µs, render: 3ms)
+ GET /api/stats 200 in 5ms (compile: 1690µs, render: 4ms)
+ GET /api/stats 200 in 5ms (compile: 1649µs, render: 3ms)
+prisma:query INSERT INTO `main`.`AgentTask` (`id`, `name`, `description`, `status`, `agentType`, `priority`, `startedAt`, `createdAt`, `updatedAt`) VALUES (?,?,?,?,?,?,?,?,?) RETURNING `id` AS `id`, `name` AS `name`, `description` AS `description`, `status` AS `status`, `agentType` AS `agentType`, `input` AS `input`, `output` AS `output`, `error` AS `error`, `priority` AS `priority`, `startedAt` AS `startedAt`, `completedAt` AS `completedAt`, `createdAt` AS `createdAt`, `updatedAt` AS `updatedAt`
+ GET /api/stats 200 in 6ms (compile: 1833µs, render: 4ms)
+ GET /api/stats 200 in 5ms (compile: 1634µs, render: 3ms)
+ GET /api/stats 200 in 5ms (compile: 1835µs, render: 3ms)
+ GET /api/stats 200 in 6ms (compile: 2ms, render: 3ms)
+ GET /api/stats 200 in 5ms (compile: 1826µs, render: 3ms)
+prisma:query SELECT 1
+prisma:query INSERT INTO `main`.`Knowledge` (`id`, `title`, `content`, `source`, `category`, `tags`, `confidence`, `verified`, `userId`, `createdAt`, `updatedAt`) VALUES (?,?,?,?,?,?,?,?,?,?,?) RETURNING `id` AS `id`, `title` AS `title`, `content` AS `content`, `source` AS `source`, `category` AS `category`, `tags` AS `tags`, `embedding` AS `embedding`, `confidence` AS `confidence`, `verified` AS `verified`, `userId` AS `userId`, `createdAt` AS `createdAt`, `updatedAt` AS `updatedAt`
+prisma:query INSERT INTO `main`.`TrainingData` (`id`, `input`, `output`, `context`, `source`, `category`, `quality`, `used`, `userId`, `createdAt`) VALUES (?,?,?,?,?,?,?,?,?,?) RETURNING `id` AS `id`, `input` AS `input`, `output` AS `output`, `context` AS `context`, `source` AS `source`, `category` AS `category`, `quality` AS `quality`, `used` AS `used`, `userId` AS `userId`, `createdAt` AS `createdAt`
+ POST /api/learn 200 in 24.8s (compile: 1710µs, render: 24.8s)
+prisma:query UPDATE `main`.`AgentTask` SET `status` = ?, `completedAt` = ?, `output` = ?, `updatedAt` = ? WHERE (`main`.`AgentTask`.`id` = ? AND 1=1) RETURNING `id` AS `id`, `name` AS `name`, `description` AS `description`, `status` AS `status`, `agentType` AS `agentType`, `input` AS `input`, `output` AS `output`, `error` AS `error`, `priority` AS `priority`, `startedAt` AS `startedAt`, `completedAt` AS `completedAt`, `createdAt` AS `createdAt`, `updatedAt` AS `updatedAt`
+ GET /api/stats 200 in 7ms (compile: 2ms, render: 5ms)
+ GET /api/stats 200 in 7ms (compile: 1642µs, render: 6ms)
+ GET /api/stats 200 in 5ms (compile: 1758µs, render: 3ms)
+ GET /api/stats 200 in 4ms (compile: 1752µs, render: 3ms)
+ GET /api/stats 200 in 4ms (compile: 1597µs, render: 3ms)
+ GET /api/stats 200 in 5ms (compile: 2ms, render: 3ms)
+ POST /api/chat 200 in 5.3s (compile: 1589µs, render: 5.3s)
+ GET /api/stats 200 in 5ms (compile: 1936µs, render: 3ms)
+ GET /api/stats 200 in 5ms (compile: 1934µs, render: 3ms)
+ POST /api/chat 200 in 904ms (compile: 1570µs, render: 902ms)
+ GET /api/stats 200 in 5ms (compile: 1485µs, render: 4ms)
+ GET /api/stats 200 in 4ms (compile: 1717µs, render: 3ms)
+ GET /api/stats 200 in 5ms (compile: 1604µs, render: 4ms)
+ GET /api/stats 200 in 4ms (compile: 1563µs, render: 3ms)
+ GET /api/stats 200 in 4ms (compile: 1513µs, render: 2ms)
+ GET /api/stats 200 in 4ms (compile: 1620µs, render: 3ms)
+ GET /api/stats 200 in 6ms (compile: 3ms, render: 3ms)
+ GET /api/stats 200 in 5ms (compile: 1631µs, render: 4ms)
+ GET /api/stats 200 in 5ms (compile: 1660µs, render: 4ms)
+ GET /api/stats 200 in 4ms (compile: 1691µs, render: 3ms)
+ GET /api/stats 200 in 4ms (compile: 1469µs, render: 3ms)
+ GET /api/stats 200 in 4ms (compile: 1569µs, render: 2ms)
+ GET /api/stats 200 in 4ms (compile: 1381µs, render: 3ms)
+ GET /api/stats 200 in 5ms (compile: 2ms, render: 3ms)
+ GET /api/stats 200 in 5ms (compile: 2ms, render: 2ms)
+ GET /api/stats 200 in 5ms (compile: 2ms, render: 3ms)
+ GET /api/stats 200 in 6ms (compile: 1771µs, render: 4ms)
+ GET /api/stats 200 in 6ms (compile: 1672µs, render: 4ms)
+ GET /api/stats 200 in 5ms (compile: 1770µs, render: 3ms)
+ GET /api/stats 200 in 5ms (compile: 1880µs, render: 3ms)
+ GET / 200 in 64ms (compile: 6ms, render: 58ms)
+ GET /api/stats 200 in 5ms (compile: 1704µs, render: 3ms)
+ GET /api/stats 200 in 5ms (compile: 1275µs, render: 3ms)
+ GET /api/stats 200 in 4ms (compile: 1489µs, render: 3ms)
+ GET /api/stats 200 in 10ms (compile: 4ms, render: 6ms)
+ GET /api/stats 200 in 7ms (compile: 2ms, render: 4ms)
+ GET /api/stats 200 in 4ms (compile: 1660µs, render: 3ms)
+ GET /api/stats 200 in 6ms (compile: 1832µs, render: 4ms)
+ GET /api/stats 200 in 5ms (compile: 1634µs, render: 3ms)
+ GET /api/stats 200 in 5ms (compile: 1692µs, render: 3ms)
+ GET /api/stats 200 in 6ms (compile: 2ms, render: 3ms)
+ GET /api/stats 200 in 6ms (compile: 1818µs, render: 4ms)
+ GET /api/stats 200 in 8ms (compile: 1902µs, render: 6ms)
+ GET /api/stats 200 in 6ms (compile: 2ms, render: 4ms)
+ GET /api/stats 200 in 5ms (compile: 1630µs, render: 3ms)
+ GET /api/stats 200 in 5ms (compile: 1870µs, render: 3ms)
+ GET /api/stats 200 in 4ms (compile: 1657µs, render: 3ms)
+ GET /api/stats 200 in 5ms (compile: 1849µs, render: 3ms)
+ GET /api/stats 200 in 6ms (compile: 3ms, render: 3ms)
+ GET /api/stats 200 in 6ms (compile: 3ms, render: 3ms)
+ GET /api/stats 200 in 6ms (compile: 1606µs, render: 4ms)
+ GET /api/stats 200 in 7ms (compile: 1700µs, render: 5ms)
+ GET /api/stats 200 in 4ms (compile: 1755µs, render: 3ms)
+ GET /api/stats 200 in 4ms (compile: 1445µs, render: 3ms)
+ POST /api/chat 200 in 2.3s (compile: 1571µs, render: 2.3s)
+ GET /api/stats 200 in 6ms (compile: 1682µs, render: 4ms)
+ GET /api/stats 200 in 5ms (compile: 1424µs, render: 4ms)
+ GET /api/stats 200 in 5ms (compile: 1755µs, render: 3ms)
+ GET /api/stats 200 in 5ms (compile: 2ms, render: 3ms)
+ GET /api/stats 200 in 5ms (compile: 1697µs, render: 3ms)
+ GET /api/stats 200 in 5ms (compile: 1841µs, render: 3ms)
+ GET /api/stats 200 in 5ms (compile: 1737µs, render: 3ms)
+ GET /api/stats 200 in 6ms (compile: 3ms, render: 4ms)
+ GET /api/stats 200 in 6ms (compile: 2ms, render: 3ms)
+ GET /api/stats 200 in 6ms (compile: 1883µs, render: 4ms)
